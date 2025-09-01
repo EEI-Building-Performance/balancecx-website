@@ -27,7 +27,7 @@ export default function Home() {
             className="h-12 w-auto"
           />
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#features" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Features</a>
+            <a href="#highlighted-features" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Features</a>
             <a href="#industries" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Industries</a>
             <a href="#testimonials" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Case Studies</a>
             <a href="/pricing" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Pricing</a>
@@ -546,12 +546,18 @@ export default function Home() {
             <div className="bg-card p-8 rounded-xl shadow-sm border border-border">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-3 h-3 bg-primary rounded-full"></div>
-                <h3 className="font-semibold text-card-foreground">United States Postal Service</h3>
+                <h3 className="font-semibold text-card-foreground">BalanceCx Overview Brochure</h3>
               </div>
               <p className="text-muted-foreground mb-4">
-                &ldquo;BalanceCx FDD platform transformed our EV charging infrastructure operations, delivering 30% energy savings through proactive maintenance and real-time equipment monitoring.&rdquo;
+                Click below to download our overview brochure PDF to share with others.
               </p>
-              <div className="text-sm text-primary font-medium">Nationwide Infrastructure Optimization</div>
+              <a 
+                href="/Analytics Services Overview (2).pdf"
+                download
+                className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors"
+              >
+                Download PDF →
+              </a>
             </div>
             
             <div className="bg-card p-8 rounded-xl shadow-sm border border-border">
