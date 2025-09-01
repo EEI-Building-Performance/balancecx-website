@@ -59,7 +59,7 @@ export default function Home() {
               Data Tools for Building Champions
             </h1>
             <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Transform reactive operations into proactive intelligence. BalanceCx delivers actionable insights from IoT data, helping commissioning agents, facility managers, and energy teams optimize performance across <span className="text-primary font-semibold">10,000+ buildings</span> worldwide.
+              BalanceCx analytics makes it easier than ever for building champions to diagnose issues on HVAC, Electrical, Metering, and Lighting equipment and OT networks.
             </p>
           </div>
         </div>
@@ -342,45 +342,190 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Highlighted Features Section */}
+      <section className="py-20 px-6 lg:px-8 bg-background">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+              Highlighted Features
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Unique capabilities that set BalanceCx apart from traditional analytics platforms
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* AI Conduit Feature */}
+            <div className="bg-card p-8 rounded-xl shadow-sm border border-border">
+              <div className="mb-6">
+                {/* Placeholder for image - replace with actual image when available */}
+                <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-primary/30 rounded-full mx-auto mb-2 flex items-center justify-center">
+                      <div className="w-12 h-12 bg-primary rounded-full"></div>
+                    </div>
+                    <p className="text-xs text-muted-foreground">AI Connector</p>
+                  </div>
+                </div>
+                {/* When image is available, use:
+                <Image
+                  src="/balanceCx_aiConnector.png"
+                  alt="BalanceCx AI Connector"
+                  width={400}
+                  height={200}
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                */}
+              </div>
+              <h3 className="text-xl font-semibold text-card-foreground mb-4">
+                Your Building's AI Conduit
+              </h3>
+              <p className="text-muted-foreground">
+                BalanceCx captures and structures your building's data so it is easiest to understand when sent to AI tools. Transform raw building data into AI-ready insights for next-generation analytics and automation.
+              </p>
+            </div>
+            
+            {/* Controls Validation Feature */}
+            <div className="bg-card p-8 rounded-xl shadow-sm border border-border">
+              <div className="mb-6">
+                <div className="w-full h-48 bg-gradient-to-br from-secondary/20 to-accent/20 rounded-lg flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-secondary/30 rounded-full mx-auto mb-2 flex items-center justify-center">
+                      <svg className="w-10 h-10 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <p className="text-xs text-muted-foreground">Scope Validation</p>
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold text-card-foreground mb-4">
+                Controls Installation & Retrofit Scope Validation
+              </h3>
+              <p className="text-muted-foreground">
+                BalanceCx Automated Functional Testing incorporates actual design documents and submittals, validating to your specific project. We verify the exact points list and sequence of operations expected, not generic analytics vendor preferences or FDD algorithms.
+              </p>
+            </div>
+            
+            {/* Network View Feature */}
+            <div className="bg-card p-8 rounded-xl shadow-sm border border-border">
+              <div className="mb-6">
+                <div className="w-full h-48 bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-accent/30 rounded-full mx-auto mb-2 flex items-center justify-center">
+                      <svg className="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <p className="text-xs text-muted-foreground">Network Analytics</p>
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold text-card-foreground mb-4">
+                Your View Into Your Network
+              </h3>
+              <p className="text-muted-foreground">
+                The EEI Data Gateway brings users an unmatched view into their controls system network performance and BACnet/Modbus device performance. Instantly troubleshoot slow controls networks with one platform, replacing multiple vendor tools.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Industry Use Cases */}
-      <section id="industries" className="py-20 px-6 lg:px-8">
+      <section id="industries" className="py-20 px-6 lg:px-8 bg-muted/30">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
               Trusted Across Industries
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               From healthcare to education, aviation to government facilities - BalanceCx delivers results
             </p>
-            <div className="flex flex-wrap justify-center gap-8 text-center mb-8">
-              <div className="bg-muted/50 px-6 py-3 rounded-lg">
-                <div className="text-2xl font-bold text-primary">10,000+</div>
-                <div className="text-sm text-muted-foreground">Buildings Optimized</div>
-              </div>
-              <div className="bg-muted/50 px-6 py-3 rounded-lg">
-                <div className="text-2xl font-bold text-primary">50M+</div>
-                <div className="text-sm text-muted-foreground">Sq Ft Monitored</div>
-              </div>
-              <div className="bg-muted/50 px-6 py-3 rounded-lg">
-                <div className="text-2xl font-bold text-primary">25+</div>
-                <div className="text-sm text-muted-foreground">Countries Served</div>
-              </div>
-              <div className="bg-muted/50 px-6 py-3 rounded-lg">
-                <div className="text-2xl font-bold text-primary">24/7</div>
-                <div className="text-sm text-muted-foreground">Real-Time Analytics</div>
-              </div>
-            </div>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {['Healthcare', 'Education', 'Aviation', 'Government', 'Commercial', 'Industrial', 'Retail', 'Hospitality'].map((industry) => (
-              <div key={industry} className="p-6">
-                <div className="w-16 h-16 bg-muted rounded-lg mx-auto mb-4 flex items-center justify-center">
-                  <div className="w-8 h-8 bg-primary rounded"></div>
-                </div>
-                <h3 className="font-semibold text-foreground">{industry}</h3>
+          <div className="grid grid-cols-4 lg:grid-cols-8 gap-4 text-center">
+            {/* Healthcare */}
+            <div className="p-2">
+              <div className="w-12 h-12 bg-muted rounded-lg mx-auto mb-2 flex items-center justify-center">
+                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 13h2l2-9 2 13 2-6h2m2 0h2l2-5 2 12 2-7h2" />
+                </svg>
               </div>
-            ))}
+              <h3 className="text-sm font-semibold text-foreground">Healthcare</h3>
+            </div>
+            
+            {/* Education */}
+            <div className="p-2">
+              <div className="w-12 h-12 bg-muted rounded-lg mx-auto mb-2 flex items-center justify-center">
+                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                </svg>
+              </div>
+              <h3 className="text-sm font-semibold text-foreground">Education</h3>
+            </div>
+            
+            {/* Aviation */}
+            <div className="p-2">
+              <div className="w-12 h-12 bg-muted rounded-lg mx-auto mb-2 flex items-center justify-center">
+                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 16l-4-4V7a2 2 0 00-2-2H9a2 2 0 00-2 2v5l-4 4m14 0v5a2 2 0 01-2 2H9a2 2 0 01-2-2v-5m14 0H7" />
+                </svg>
+              </div>
+              <h3 className="text-sm font-semibold text-foreground">Aviation</h3>
+            </div>
+            
+            {/* Government */}
+            <div className="p-2">
+              <div className="w-12 h-12 bg-muted rounded-lg mx-auto mb-2 flex items-center justify-center">
+                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+              <h3 className="text-sm font-semibold text-foreground">Government</h3>
+            </div>
+            
+            {/* Commercial */}
+            <div className="p-2">
+              <div className="w-12 h-12 bg-muted rounded-lg mx-auto mb-2 flex items-center justify-center">
+                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-sm font-semibold text-foreground">Commercial</h3>
+            </div>
+            
+            {/* Industrial */}
+            <div className="p-2">
+              <div className="w-12 h-12 bg-muted rounded-lg mx-auto mb-2 flex items-center justify-center">
+                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                </svg>
+              </div>
+              <h3 className="text-sm font-semibold text-foreground">Industrial</h3>
+            </div>
+            
+            {/* Retail */}
+            <div className="p-2">
+              <div className="w-12 h-12 bg-muted rounded-lg mx-auto mb-2 flex items-center justify-center">
+                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+              </div>
+              <h3 className="text-sm font-semibold text-foreground">Retail</h3>
+            </div>
+            
+            {/* Mission Critical */}
+            <div className="p-2">
+              <div className="w-12 h-12 bg-muted rounded-lg mx-auto mb-2 flex items-center justify-center">
+                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              </div>
+              <h3 className="text-sm font-semibold text-foreground">Mission Critical</h3>
+            </div>
           </div>
         </div>
       </section>
