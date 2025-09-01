@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
+import Link from "next/link";
 
 type ProjectType = 'New Construction' | 'Existing Building';
 
@@ -89,7 +90,7 @@ export default function Pricing() {
       {/* Header/Navigation */}
       <header className="py-6 px-6 lg:px-8 border-b border-border">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <a href="/">
+          <Link href="/">
             <Image
               src="/BalanceCx Logo - Black.png"
               alt="BalanceCx Logo"
@@ -97,12 +98,12 @@ export default function Pricing() {
               height={60}
               className="h-12 w-auto"
             />
-          </a>
+          </Link>
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="/#features" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Features</a>
-            <a href="/#industries" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Industries</a>
-            <a href="/#testimonials" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Case Studies</a>
-            <a href="/pricing" className="text-primary border-b-2 border-primary transition-colors text-base font-medium py-2 px-3">Pricing</a>
+            <Link href="/#features" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Features</Link>
+            <Link href="/#industries" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Industries</Link>
+            <Link href="/#testimonials" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Case Studies</Link>
+            <Link href="/pricing" className="text-primary border-b-2 border-primary transition-colors text-base font-medium py-2 px-3">Pricing</Link>
             <a 
               href="https://outlook.office365.com/book/BalanceCxIntroduction@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true"
               target="_blank"
@@ -416,15 +417,15 @@ export default function Pricing() {
             <div>
               <h4 className="font-semibold text-card-foreground mb-4">Product</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li><a href="/#features" className="hover:text-card-foreground transition-colors">Features</a></li>
-                <li><a href="/pricing" className="hover:text-card-foreground transition-colors">Pricing</a></li>
-                <li><a href="/#features" className="hover:text-card-foreground transition-colors">Integrations</a></li>
+                <li><Link href="/#features" className="hover:text-card-foreground transition-colors">Features</Link></li>
+                <li><Link href="/pricing" className="hover:text-card-foreground transition-colors">Pricing</Link></li>
+                <li><Link href="/#features" className="hover:text-card-foreground transition-colors">Integrations</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold text-card-foreground mb-4">Company</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li><a href="/#testimonials" className="hover:text-card-foreground transition-colors">About</a></li>
+                <li><Link href="/#testimonials" className="hover:text-card-foreground transition-colors">About</Link></li>
                 <li><a href="https://outlook.office365.com/book/BalanceCxIntroduction@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true" target="_blank" rel="noopener noreferrer" className="hover:text-card-foreground transition-colors">Contact</a></li>
                 <li><a href="https://eei.balancecx.com" target="_blank" rel="noopener noreferrer" className="hover:text-card-foreground transition-colors">Support</a></li>
               </ul>

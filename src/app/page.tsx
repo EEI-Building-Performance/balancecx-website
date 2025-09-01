@@ -75,7 +75,7 @@ export default function Home() {
                 Use Cases
               </h2>
               <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
-                Comprehensive analytics solutions for every phase of your building's lifecycle
+                Comprehensive analytics solutions for every phase of your building&apos;s lifecycle
               </p>
             </div>
             
@@ -276,7 +276,7 @@ export default function Home() {
                     Facility Operations Platform
                   </h3>
                   <p className="text-base text-muted-foreground mb-4">
-                    Your building's command center. Proactive monitoring and intelligent alerts keep your facility running at peak performance year-round.
+                    Your building&apos;s command center. Proactive monitoring and intelligent alerts keep your facility running at peak performance year-round.
                   </p>
                   <ul className="space-y-4 mb-8">
                     <li className="flex items-start">
@@ -378,10 +378,10 @@ export default function Home() {
                 */}
               </div>
               <h3 className="text-xl font-semibold text-card-foreground mb-4">
-                Your Building's AI Conduit
+                Your Building&apos;s AI Conduit
               </h3>
               <p className="text-muted-foreground">
-                BalanceCx captures and structures your building's data so it is easiest to understand when sent to AI tools. Transform raw building data into AI-ready insights for next-generation analytics and automation.
+                BalanceCx captures and structures your building&apos;s data so it is easiest to understand when sent to AI tools. Transform raw building data into AI-ready insights for next-generation analytics and automation.
               </p>
             </div>
             
@@ -549,7 +549,7 @@ export default function Home() {
                 <h3 className="font-semibold text-card-foreground">United States Postal Service</h3>
               </div>
               <p className="text-muted-foreground mb-4">
-                "BalanceCx FDD platform transformed our EV charging infrastructure operations, delivering 30% energy savings through proactive maintenance and real-time equipment monitoring."
+                &ldquo;BalanceCx FDD platform transformed our EV charging infrastructure operations, delivering 30% energy savings through proactive maintenance and real-time equipment monitoring.&rdquo;
               </p>
               <div className="text-sm text-primary font-medium">Nationwide Infrastructure Optimization</div>
             </div>
@@ -560,7 +560,7 @@ export default function Home() {
                 <h3 className="font-semibold text-card-foreground">Washington & Lee University</h3>
               </div>
               <p className="text-muted-foreground mb-4">
-                "Indoor environmental quality improved 40% across campus with BalanceCx actionable intelligence and automated KPI tracking for all building systems."
+                &ldquo;Indoor environmental quality improved 40% across campus with BalanceCx actionable intelligence and automated KPI tracking for all building systems.&rdquo;
               </p>
               <div className="text-sm text-secondary font-medium">Campus-Wide Performance Excellence</div>
             </div>
@@ -571,7 +571,7 @@ export default function Home() {
                 <h3 className="font-semibold text-card-foreground">Ohio State Wexner Medical Center</h3>
               </div>
               <p className="text-muted-foreground mb-4">
-                "Mission-critical healthcare operations rely on BalanceCx condition-based maintenance and 24/7 equipment reliability monitoring for patient safety."
+                &ldquo;Mission-critical healthcare operations rely on BalanceCx condition-based maintenance and 24/7 equipment reliability monitoring for patient safety.&rdquo;
               </p>
               <div className="text-sm text-accent font-medium">Healthcare Facility Excellence</div>
             </div>
