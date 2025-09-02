@@ -343,7 +343,7 @@ export default function Home() {
       </section>
 
       {/* Highlighted Features Section */}
-      <section className="py-20 px-6 lg:px-8 bg-background">
+      <section id="highlighted-features" className="py-20 px-6 lg:px-8 bg-background">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
@@ -592,7 +592,7 @@ export default function Home() {
             Transform Reactive to Proactive Operations
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Join 10,000+ buildings worldwide using BalanceCx FDD platform for actionable intelligence and equipment reliability.
+            Join the hundreds of buildings using BalanceCx analytics for actionable intelligence and equipment reliability.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
@@ -620,7 +620,7 @@ export default function Home() {
                 className="h-10 w-auto mb-4"
               />
               <p className="text-muted-foreground max-w-md">
-                Cloud-based analytics platform for building performance optimization, commissioning, and facility operations.
+                Analytics platform for building performance optimization, commissioning, and facility operations.
               </p>
             </div>
             <div>

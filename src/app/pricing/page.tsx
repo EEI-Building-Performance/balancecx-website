@@ -411,7 +411,7 @@ export default function Pricing() {
                 className="h-10 w-auto mb-4"
               />
               <p className="text-muted-foreground max-w-md">
-                Cloud-based analytics platform for building performance optimization, commissioning, and facility operations.
+                Analytics platform for building performance optimization, commissioning, and facility operations.
               </p>
             </div>
             <div>
@@ -425,9 +425,9 @@ export default function Pricing() {
             <div>
               <h4 className="font-semibold text-card-foreground mb-4">Company</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li><Link href="/#testimonials" className="hover:text-card-foreground transition-colors">About</Link></li>
-                <li><a href="https://outlook.office365.com/book/BalanceCxIntroduction@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true" target="_blank" rel="noopener noreferrer" className="hover:text-card-foreground transition-colors">Contact</a></li>
-                <li><a href="https://eei.balancecx.com" target="_blank" rel="noopener noreferrer" className="hover:text-card-foreground transition-colors">Support</a></li>
+                <li><Link href="/about" className="hover:text-card-foreground transition-colors">About</Link></li>
+                <li><Link href="/contact" className="hover:text-card-foreground transition-colors">Contact</Link></li>
+                <li><Link href="/support" className="hover:text-card-foreground transition-colors">Support</Link></li>
               </ul>
             </div>
           </div>
