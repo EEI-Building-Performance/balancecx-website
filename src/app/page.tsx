@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header/Navigation */}
-      <header className="absolute top-0 left-0 right-0 z-10 py-6 px-6 lg:px-8">
+      <header className="fixed top-0 left-0 right-0 z-50 py-6 px-6 lg:px-8 bg-background/95 backdrop-blur-sm border-b border-border/40">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <Image
             src="/BalanceCx Logo - Black.png"
@@ -147,9 +147,6 @@ export default function Home() {
             }`}>
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <div className="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
-                    <div className="w-8 h-8 bg-primary rounded"></div>
-                  </div>
                   <h3 className="text-2xl font-bold text-foreground mb-4">
                     New Construction Project Analytics
                   </h3>
@@ -208,9 +205,6 @@ export default function Home() {
             }`}>
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <div className="w-16 h-16 bg-secondary/20 rounded-xl flex items-center justify-center mb-6">
-                    <div className="w-8 h-8 bg-secondary rounded"></div>
-                  </div>
                   <h3 className="text-2xl font-bold text-foreground mb-4">
                     Monitoring Based Commissioning
                   </h3>
@@ -269,9 +263,6 @@ export default function Home() {
             }`}>
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <div className="w-16 h-16 bg-accent/20 rounded-xl flex items-center justify-center mb-6">
-                    <div className="w-8 h-8 bg-accent rounded"></div>
-                  </div>
                   <h3 className="text-2xl font-bold text-foreground mb-4">
                     Facility Operations Platform
                   </h3>
@@ -626,17 +617,17 @@ export default function Home() {
             <div>
               <h4 className="font-semibold text-card-foreground mb-4">Product</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li><a href="#" className="hover:text-card-foreground transition-colors">Features</a></li>
-                <li><a href="#" className="hover:text-card-foreground transition-colors">Pricing</a></li>
-                <li><a href="#" className="hover:text-card-foreground transition-colors">Integrations</a></li>
+                <li><a href="#highlighted-features" className="hover:text-card-foreground transition-colors">Features</a></li>
+                <li><a href="/pricing" className="hover:text-card-foreground transition-colors">Pricing</a></li>
+                <li><a href="#industries" className="hover:text-card-foreground transition-colors">Industries</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold text-card-foreground mb-4">Company</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li><a href="#" className="hover:text-card-foreground transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-card-foreground transition-colors">Contact</a></li>
-                <li><a href="#" className="hover:text-card-foreground transition-colors">Support</a></li>
+                <li><a href="/about" className="hover:text-card-foreground transition-colors">About</a></li>
+                <li><a href="/contact" className="hover:text-card-foreground transition-colors">Contact</a></li>
+                <li><a href="/support" className="hover:text-card-foreground transition-colors">Support</a></li>
               </ul>
             </div>
           </div>
