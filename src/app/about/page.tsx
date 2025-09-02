@@ -60,7 +60,7 @@ export default function About() {
             <section className="mb-12">
               <h2 className="text-2xl font-semibold text-foreground mb-4">What We Do</h2>
               <p className="text-muted-foreground mb-6">
-                Our cloud-based platform continuously monitors building systems, equipment, and IoT devices to identify optimization 
+                Our platform continuously monitors building systems, equipment, and IoT devices to identify optimization 
                 opportunities, predict failures, and ensure peak performance. From new construction commissioning to ongoing facility 
                 operations, BalanceCx provides the tools you need for:
               </p>
@@ -72,28 +72,6 @@ export default function About() {
                 <li>Indoor Environmental Quality Management</li>
                 <li>Equipment Reliability Monitoring</li>
               </ul>
-            </section>
-
-            <section className="mb-12">
-              <h2 className="text-2xl font-semibold text-foreground mb-4">Industries We Serve</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-card p-6 rounded-lg border border-border">
-                  <h3 className="font-semibold text-card-foreground mb-2">Healthcare</h3>
-                  <p className="text-muted-foreground">Critical environments requiring 24/7 reliability and compliance</p>
-                </div>
-                <div className="bg-card p-6 rounded-lg border border-border">
-                  <h3 className="font-semibold text-card-foreground mb-2">Higher Education</h3>
-                  <p className="text-muted-foreground">Campus-wide optimization for sustainability and comfort</p>
-                </div>
-                <div className="bg-card p-6 rounded-lg border border-border">
-                  <h3 className="font-semibold text-card-foreground mb-2">Commercial Real Estate</h3>
-                  <p className="text-muted-foreground">Maximizing tenant satisfaction and operational efficiency</p>
-                </div>
-                <div className="bg-card p-6 rounded-lg border border-border">
-                  <h3 className="font-semibold text-card-foreground mb-2">Mission Critical</h3>
-                  <p className="text-muted-foreground">Data centers and facilities requiring maximum uptime</p>
-                </div>
-              </div>
             </section>
 
             <section className="mb-12">

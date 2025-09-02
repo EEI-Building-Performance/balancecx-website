@@ -20,8 +20,21 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, this would send the form data to your backend
-    alert('Thank you for contacting us! We will get back to you soon.');
+    
+    // Construct the email body
+    const subject = encodeURIComponent(`Contact Form Submission from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Company: ${formData.company}\n` +
+      `Phone: ${formData.phone}\n\n` +
+      `Message:\n${formData.message}`
+    );
+    
+    // Open email client with pre-filled data
+    window.location.href = `mailto:btalbot@eeibuildingperformance.com?subject=${subject}&body=${body}`;
+    
+    // Clear the form
     setFormData({ name: '', email: '', company: '', phone: '', message: '' });
   };
 
@@ -168,8 +181,8 @@ export default function Contact() {
                 <div className="space-y-4">
                   <div>
                     <h3 className="font-semibold text-card-foreground mb-2">Email</h3>
-                    <a href="mailto:sales@balancecx.com" className="text-primary hover:text-primary/80">
-                      sales@balancecx.com
+                    <a href="mailto:btalbot@eeibuildingperformance.com" className="text-primary hover:text-primary/80">
+                      btalbot@eeibuildingperformance.com
                     </a>
                   </div>
                   
@@ -190,50 +203,13 @@ export default function Contact() {
                   
                   <div>
                     <h3 className="font-semibold text-card-foreground mb-2">Support</h3>
-                    <p className="text-muted-foreground mb-2">
-                      For existing customers needing technical assistance
+                    <p className="text-muted-foreground">
+                      For existing customers needing assistance you can review the documentation when logged in, contact your EEI Building Performance representative, send us a message here, or use the schedule a demo button to schedule a meeting with us.
                     </p>
-                    <a 
-                      href="https://eei.balancecx.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-primary hover:text-primary/80"
-                    >
-                      Visit support portal →
-                    </a>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-card p-8 rounded-xl shadow-sm border border-border">
-                <h3 className="text-xl font-semibold text-card-foreground mb-4">Quick Links</h3>
-                <ul className="space-y-3">
-                  <li>
-                    <Link href="/pricing" className="text-primary hover:text-primary/80">
-                      View Pricing →
-                    </Link>
-                  </li>
-                  <li>
-                    <a 
-                      href="/Analytics Services Overview (2).pdf"
-                      download
-                      className="text-primary hover:text-primary/80"
-                    >
-                      Download Brochure →
-                    </a>
-                  </li>
-                  <li>
-                    <a 
-                      href="https://eei.balancecx.com/#/signIn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:text-primary/80"
-                    >
-                      Customer Login →
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>

@@ -385,7 +385,7 @@ export default function Pricing() {
 
                   <div className="pt-4">
                     <button 
-                      onClick={() => alert('Contact sales@balancecx.com for a custom proposal')}
+                      onClick={() => alert('Contact btalbot@eeibuildingperformance.com for a custom proposal')}
                       className="w-full bg-primary text-primary-foreground px-8 py-4 rounded-lg text-lg font-semibold hover:opacity-90 transition-opacity shadow-lg"
                     >
                       Request Custom Proposal

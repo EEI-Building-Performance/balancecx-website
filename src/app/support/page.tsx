@@ -53,32 +53,19 @@ export default function Support() {
           </div>
 
           {/* Quick Actions */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <a 
-              href="https://eei.balancecx.com"
+              href="https://eei.balancecx.com/#/signIn"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-card p-6 rounded-xl shadow-sm border border-border hover:border-primary transition-colors"
-            >
-              <div className="text-primary text-3xl mb-4">🔧</div>
-              <h3 className="text-lg font-semibold text-card-foreground mb-2">Customer Portal</h3>
-              <p className="text-muted-foreground mb-4">
-                Access your BalanceCx dashboard and analytics
-              </p>
-              <span className="text-primary font-medium">Login →</span>
-            </a>
-
-            <a 
-              href="/Analytics Services Overview (2).pdf"
-              download
               className="bg-card p-6 rounded-xl shadow-sm border border-border hover:border-primary transition-colors"
             >
               <div className="text-primary text-3xl mb-4">📄</div>
               <h3 className="text-lg font-semibold text-card-foreground mb-2">Documentation</h3>
               <p className="text-muted-foreground mb-4">
-                Download our overview brochure and guides
+                Login and click on the Documentation link
               </p>
-              <span className="text-primary font-medium">Download PDF →</span>
+              <span className="text-primary font-medium">Log In →</span>
             </a>
 
             <a 
@@ -97,41 +84,7 @@ export default function Support() {
           </div>
 
           {/* Support Resources */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            <div className="bg-card p-8 rounded-xl shadow-sm border border-border">
-              <h2 className="text-2xl font-semibold text-card-foreground mb-6">Getting Started</h2>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <span className="text-primary mr-3">•</span>
-                  <div>
-                    <h3 className="font-semibold text-card-foreground mb-1">Initial Setup</h3>
-                    <p className="text-muted-foreground">Configure your building systems and connect data sources</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-3">•</span>
-                  <div>
-                    <h3 className="font-semibold text-card-foreground mb-1">Dashboard Overview</h3>
-                    <p className="text-muted-foreground">Navigate analytics dashboards and customize views</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-3">•</span>
-                  <div>
-                    <h3 className="font-semibold text-card-foreground mb-1">FDD Configuration</h3>
-                    <p className="text-muted-foreground">Set up fault detection rules and alert thresholds</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-3">•</span>
-                  <div>
-                    <h3 className="font-semibold text-card-foreground mb-1">Report Generation</h3>
-                    <p className="text-muted-foreground">Create and schedule automated performance reports</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
+          <div className="mb-12">
             <div className="bg-card p-8 rounded-xl shadow-sm border border-border">
               <h2 className="text-2xl font-semibold text-card-foreground mb-6">Frequently Asked Questions</h2>
               <div className="space-y-4">
@@ -167,31 +120,50 @@ export default function Support() {
                     BalanceCx scales from single buildings to entire portfolios. We serve facilities from 50,000 to millions of square feet.
                   </p>
                 </details>
+                <details className="group">
+                  <summary className="font-semibold text-card-foreground cursor-pointer hover:text-primary">
+                    Can BalanceCx work offline?
+                  </summary>
+                  <p className="text-muted-foreground mt-2 pl-4">
+                    Yes, BalanceCx has a fully functional offline version that can operate independently without internet connectivity, ensuring continuous monitoring and analytics.
+                  </p>
+                </details>
+                <details className="group">
+                  <summary className="font-semibold text-card-foreground cursor-pointer hover:text-primary">
+                    What types of reports can I generate?
+                  </summary>
+                  <p className="text-muted-foreground mt-2 pl-4">
+                    Generate energy consumption reports, FDD summaries, equipment performance analytics, comfort analysis, maintenance logs, and custom reports tailored to your needs.
+                  </p>
+                </details>
+                <details className="group">
+                  <summary className="font-semibold text-card-foreground cursor-pointer hover:text-primary">
+                    How does BalanceCx help with energy savings?
+                  </summary>
+                  <p className="text-muted-foreground mt-2 pl-4">
+                    Our platform identifies inefficiencies, recommends optimization strategies, and tracks improvements. Most clients achieve 15-30% energy cost reduction within the first year.
+                  </p>
+                </details>
+                <details className="group">
+                  <summary className="font-semibold text-card-foreground cursor-pointer hover:text-primary">
+                    What support is available during implementation?
+                  </summary>
+                  <p className="text-muted-foreground mt-2 pl-4">
+                    We provide dedicated implementation support including system configuration, data mapping, training sessions, and ongoing technical assistance from our engineering team.
+                  </p>
+                </details>
+                <details className="group">
+                  <summary className="font-semibold text-card-foreground cursor-pointer hover:text-primary">
+                    Can I integrate BalanceCx with my existing work order system?
+                  </summary>
+                  <p className="text-muted-foreground mt-2 pl-4">
+                    Yes, BalanceCx offers API integrations with popular CMMS and work order systems, enabling automated ticket creation and bidirectional data synchronization.
+                  </p>
+                </details>
               </div>
             </div>
           </div>
 
-          {/* Contact Support */}
-          <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-8 text-center">
-            <h2 className="text-2xl font-semibold text-foreground mb-4">Need Additional Help?</h2>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Our support team is ready to assist you with technical questions, training, and optimization strategies.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                href="/contact"
-                className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
-              >
-                Contact Support
-              </Link>
-              <a 
-                href="mailto:support@balancecx.com"
-                className="border border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors"
-              >
-                Email: support@balancecx.com
-              </a>
-            </div>
-          </div>
         </div>
       </div>
 
