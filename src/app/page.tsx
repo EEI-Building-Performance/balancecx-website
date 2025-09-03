@@ -28,6 +28,7 @@ export default function Home() {
           />
           <nav className="hidden md:flex items-center space-x-6">
             <a href="#highlighted-features" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Features</a>
+            <a href="#integrations" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Integrations</a>
             <a href="#industries" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Industries</a>
             <a href="#testimonials" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Case Studies</a>
             <a href="/pricing" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Pricing</a>
@@ -423,6 +424,101 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Integrations Section */}
+      <section id="integrations" className="py-20 px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+              Integrations
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Seamlessly connect with your existing systems and leverage cutting-edge AI capabilities
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Device Data Card */}
+            <div className="bg-card rounded-xl p-8 shadow-sm border border-border">
+              <h3 className="text-2xl font-semibold text-card-foreground mb-8">Device Data</h3>
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <Image src="/BACnet-Logo-New.gif" alt="BACnet" width={60} height={60} className="object-contain" />
+                  <span className="text-lg text-muted-foreground">BACnet</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <Image src="/modbus_logo.png" alt="Modbus" width={60} height={60} className="object-contain" />
+                  <span className="text-lg text-muted-foreground">Modbus</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <Image src="/mqtt_logo.png" alt="MQTT" width={60} height={60} className="object-contain" />
+                  <span className="text-lg text-muted-foreground">MQTT</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-[60px] h-[60px] bg-muted rounded flex items-center justify-center">
+                    <span className="text-base font-semibold">SQL</span>
+                  </div>
+                  <span className="text-lg text-muted-foreground">SQL</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <Image src="/haystack.png" alt="Haystack" width={60} height={60} className="object-contain" />
+                  <span className="text-lg text-muted-foreground">Haystack API</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-[60px] h-[60px] bg-muted rounded flex items-center justify-center">
+                    <span className="text-base font-semibold">OPC</span>
+                  </div>
+                  <span className="text-lg text-muted-foreground">OPC UA</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Other Integrations Card */}
+            <div className="bg-card rounded-xl p-8 shadow-sm border border-border">
+              <h3 className="text-2xl font-semibold text-card-foreground mb-8">Other Integrations</h3>
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <Image src="/ESPM_logo.png" alt="Energy Star Portfolio Manager" width={60} height={60} className="object-contain" />
+                  <span className="text-lg text-muted-foreground">Energy Star Portfolio Manager</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-[60px] h-[60px] bg-muted rounded flex items-center justify-center">
+                    <span className="text-base font-semibold">M</span>
+                  </div>
+                  <span className="text-lg text-muted-foreground">Monnit</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-[60px] h-[60px] bg-blue-600 rounded flex items-center justify-center">
+                    <span className="text-white text-base font-semibold">W</span>
+                  </div>
+                  <span className="text-lg text-muted-foreground">Microsoft Word</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-[60px] h-[60px] bg-green-600 rounded flex items-center justify-center">
+                    <span className="text-white text-base font-semibold">E</span>
+                  </div>
+                  <span className="text-lg text-muted-foreground">Microsoft Excel</span>
+                </div>
+              </div>
+            </div>
+
+            {/* AI Integrations Card */}
+            <div className="bg-card rounded-xl p-8 shadow-sm border border-border">
+              <h3 className="text-2xl font-semibold text-card-foreground mb-8">AI Integrations</h3>
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <Image src="/chatGPT_logo.png" alt="ChatGPT" width={60} height={60} className="object-contain" />
+                  <span className="text-lg text-muted-foreground">ChatGPT</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <Image src="/gemini logo.png" alt="Gemini" width={60} height={60} className="object-contain" />
+                  <span className="text-lg text-muted-foreground">Gemini</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Industry Use Cases */}
       <section id="industries" className="py-20 px-6 lg:px-8 bg-muted/30">
         <div className="max-w-7xl mx-auto">
@@ -619,7 +715,7 @@ export default function Home() {
               <ul className="space-y-2 text-muted-foreground">
                 <li><a href="#highlighted-features" className="hover:text-card-foreground transition-colors">Features</a></li>
                 <li><a href="/pricing" className="hover:text-card-foreground transition-colors">Pricing</a></li>
-                <li><a href="#industries" className="hover:text-card-foreground transition-colors">Industries</a></li>
+                <li><a href="#integrations" className="hover:text-card-foreground transition-colors">Integrations</a></li>
               </ul>
             </div>
             <div>
