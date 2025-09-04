@@ -144,8 +144,15 @@ export default function About() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 BalanceCx. All rights reserved.</p>
+          <div className="border-t border-border mt-8 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <p className="text-muted-foreground mb-4 md:mb-0">&copy; 2024 BalanceCx. All rights reserved.</p>
+              <div className="flex space-x-6 text-muted-foreground">
+                <Link href="/privacy" className="hover:text-card-foreground transition-colors">Privacy Policy</Link>
+                <Link href="/cookies" className="hover:text-card-foreground transition-colors">Cookie Policy</Link>
+                <Link href="/terms" className="hover:text-card-foreground transition-colors">Terms & Conditions</Link>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
