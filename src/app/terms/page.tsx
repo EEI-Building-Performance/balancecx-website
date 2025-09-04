@@ -52,8 +52,8 @@ export default function TermsConditions() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Agreement to Terms</h2>
               <p className="text-muted-foreground mb-4">
-                These Terms and Conditions ("Terms") govern your use of the BalanceCx building analytics platform and related services 
-                (collectively, the "Services") operated by BalanceCx ("we," "our," or "us"). By accessing or using our Services, you agree 
+                These Terms and Conditions (&ldquo;Terms&rdquo;) govern your use of the BalanceCx building analytics platform and related services 
+                (collectively, the &ldquo;Services&rdquo;) operated by BalanceCx (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;). By accessing or using our Services, you agree 
                 to be bound by these Terms. If you disagree with any part of these terms, then you may not access the Services.
               </p>
             </section>
@@ -92,7 +92,7 @@ export default function TermsConditions() {
 
               <h3 className="text-xl font-semibold text-foreground mb-3">3.2 Account Restrictions</h3>
               <p className="text-muted-foreground mb-4">
-                You must be at least 18 years old and have the legal authority to enter into these Terms. You may not use another person's 
+                You must be at least 18 years old and have the legal authority to enter into these Terms. You may not use another person&rsquo;s 
                 account without permission.
               </p>
             </section>
@@ -166,7 +166,7 @@ export default function TermsConditions() {
 
               <h3 className="text-xl font-semibold text-foreground mb-3">6.2 Your Data</h3>
               <p className="text-muted-foreground mb-4">
-                You retain ownership of all data you submit to the Services ("Your Data"). By using the Services, you grant us a 
+                You retain ownership of all data you submit to the Services (&ldquo;Your Data&rdquo;). By using the Services, you grant us a 
                 worldwide, non-exclusive license to use, store, process, and analyze Your Data solely to provide and improve the Services.
               </p>
 
@@ -219,14 +219,14 @@ export default function TermsConditions() {
               
               <h3 className="text-xl font-semibold text-foreground mb-3">10.1 Service Disclaimer</h3>
               <p className="text-muted-foreground mb-4">
-                THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING 
+                THE SERVICES ARE PROVIDED &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING 
                 BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR ACCURACY.
               </p>
 
               <h3 className="text-xl font-semibold text-foreground mb-3">10.2 No Professional Advice</h3>
               <p className="text-muted-foreground mb-4">
                 The Services provide data analysis and recommendations but do not constitute professional engineering, architectural, or 
-                consulting advice. You should consult with qualified professionals before making decisions based on the Services' output.
+                consulting advice. You should consult with qualified professionals before making decisions based on the Services&rsquo; output.
               </p>
             </section>
 
@@ -247,7 +247,7 @@ export default function TermsConditions() {
               <h2 className="text-2xl font-semibold text-foreground mb-4">12. Indemnification</h2>
               <p className="text-muted-foreground mb-4">
                 You agree to indemnify, defend, and hold harmless BalanceCx and its officers, directors, employees, agents, and affiliates 
-                from any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys' fees) arising from:
+                from any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys&rsquo; fees) arising from:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
                 <li>Your use of the Services</li>
@@ -313,7 +313,7 @@ export default function TermsConditions() {
               <h3 className="text-xl font-semibold text-foreground mb-3">15.2 Amendments</h3>
               <p className="text-muted-foreground mb-4">
                 We reserve the right to modify these Terms at any time. We will notify you of material changes by posting the new Terms 
-                and updating the "Effective Date." Your continued use of the Services after changes constitutes acceptance.
+                and updating the &ldquo;Effective Date.&rdquo; Your continued use of the Services after changes constitutes acceptance.
               </p>
 
               <h3 className="text-xl font-semibold text-foreground mb-3">15.3 Waiver and Severability</h3>

@@ -50,8 +50,8 @@ export default function PrivacyPolicy() {
           <div className="prose prose-lg max-w-none space-y-8">
             <section>
               <p className="text-muted-foreground mb-4">
-                This privacy statement ("statement") will help you understand how EEI ("us") ("we") ("our") uses and protects the data 
-                you provide to us when you visit and use eeiengineers.com ("website") ("service").
+                This privacy statement (&ldquo;statement&rdquo;) will help you understand how EEI (&ldquo;us&rdquo;) (&ldquo;we&rdquo;) (&ldquo;our&rdquo;) uses and protects the data 
+                you provide to us when you visit and use eeiengineers.com (&ldquo;website&rdquo;) (&ldquo;service&rdquo;).
               </p>
               <p className="text-muted-foreground mb-4">
                 We reserve the right to change this statement at any given time at our discretion. Visit this page frequently for updates 

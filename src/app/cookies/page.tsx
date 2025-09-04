@@ -52,8 +52,8 @@ export default function CookiePolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Introduction</h2>
               <p className="text-muted-foreground mb-4">
-                This Cookie Policy explains how BalanceCx ("we," "our," or "us") uses cookies and similar tracking technologies when 
-                you visit our website and use our building analytics platform (collectively, our "Services"). This policy describes what 
+                This Cookie Policy explains how BalanceCx (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) uses cookies and similar tracking technologies when 
+                you visit our website and use our building analytics platform (collectively, our &ldquo;Services&rdquo;). This policy describes what 
                 these technologies are, why we use them, and your rights to control our use of them.
               </p>
             </section>
@@ -65,8 +65,8 @@ export default function CookiePolicy() {
                 owners to make their websites work, or to work more efficiently, as well as to provide reporting information.
               </p>
               <p className="text-muted-foreground mb-4">
-                Cookies set by the website owner (in this case, BalanceCx) are called "first-party cookies." Cookies set by parties other 
-                than the website owner are called "third-party cookies." Third-party cookies enable third-party features or functionality 
+                Cookies set by the website owner (in this case, BalanceCx) are called &ldquo;first-party cookies.&rdquo; Cookies set by parties other 
+                than the website owner are called &ldquo;third-party cookies.&rdquo; Third-party cookies enable third-party features or functionality 
                 to be provided on or through the website (e.g., advertising, interactive content, and analytics).
               </p>
             </section>
@@ -91,7 +91,7 @@ export default function CookiePolicy() {
               <h3 className="text-xl font-semibold text-foreground mb-3">3.2 Performance and Analytics Cookies</h3>
               <p className="text-muted-foreground mb-4">
                 These cookies collect information about how visitors use our Services, such as which pages visitors go to most often and 
-                if they get error messages from web pages. These cookies don't collect information that identifies individual visitors. 
+                if they get error messages from web pages. These cookies don&rsquo;t collect information that identifies individual visitors. 
                 All information these cookies collect is aggregated and anonymous.
               </p>
               <div className="bg-muted p-4 rounded-lg mb-4">
@@ -162,7 +162,7 @@ export default function CookiePolicy() {
 
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">6. Cookie Duration</h2>
-              <p className="text-muted-foreground mb-4">Cookies can be either "session" cookies or "persistent" cookies:</p>
+              <p className="text-muted-foreground mb-4">Cookies can be either &ldquo;session&rdquo; cookies or &ldquo;persistent&rdquo; cookies:</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
                 <li><strong>Session Cookies:</strong> These are temporary cookies that expire when you close your browser</li>
                 <li><strong>Persistent Cookies:</strong> These remain on your device for a set period or until you delete them</li>
@@ -179,7 +179,7 @@ export default function CookiePolicy() {
               <h3 className="text-xl font-semibold text-foreground mb-3">7.1 Cookie Consent Tool</h3>
               <p className="text-muted-foreground mb-4">
                 When you first visit our website, you will see a cookie banner that allows you to accept or reject different categories 
-                of cookies. You can change your preferences at any time by clicking the "Cookie Settings" link in the footer of our website.
+                of cookies. You can change your preferences at any time by clicking the &ldquo;Cookie Settings&rdquo; link in the footer of our website.
               </p>
 
               <h3 className="text-xl font-semibold text-foreground mb-3">7.2 Browser Settings</h3>
@@ -208,7 +208,7 @@ export default function CookiePolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">8. Do Not Track Signals</h2>
               <p className="text-muted-foreground mb-4">
-                Some browsers include a "Do Not Track" (DNT) feature that signals to websites that you do not want to have your online 
+                Some browsers include a &ldquo;Do Not Track&rdquo; (DNT) feature that signals to websites that you do not want to have your online 
                 activity tracked. Currently, there is no universal standard for how websites should respond to DNT signals. Therefore, 
                 our Services do not currently respond to DNT signals.
               </p>
@@ -233,7 +233,7 @@ export default function CookiePolicy() {
               <p className="text-muted-foreground mb-4">
                 We may update this Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, 
                 or regulatory reasons. We will notify you of any material changes by posting the new Cookie Policy on this page and 
-                updating the "Effective Date" above.
+                updating the &ldquo;Effective Date&rdquo; above.
               </p>
             </section>
 
