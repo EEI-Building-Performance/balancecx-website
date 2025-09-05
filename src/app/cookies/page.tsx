@@ -22,7 +22,6 @@ export default function CookiePolicy() {
             <Link href="/#highlighted-features" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Features</Link>
             <Link href="/#industries" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Industries</Link>
             <Link href="/#testimonials" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Case Studies</Link>
-            <Link href="/pricing" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Pricing</Link>
             <a 
               href="https://outlook.office365.com/book/BalanceCxIntroduction@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true"
               target="_blank"
@@ -273,7 +272,6 @@ export default function CookiePolicy() {
               <h4 className="font-semibold text-card-foreground mb-4">Product</h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li><Link href="/#highlighted-features" className="hover:text-card-foreground transition-colors">Features</Link></li>
-                <li><Link href="/pricing" className="hover:text-card-foreground transition-colors">Pricing</Link></li>
                 <li><Link href="/#integrations" className="hover:text-card-foreground transition-colors">Integrations</Link></li>
               </ul>
             </div>

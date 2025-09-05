@@ -31,7 +31,6 @@ export default function Home() {
             <a href="#integrations" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Integrations</a>
             <a href="#industries" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Industries</a>
             <a href="#testimonials" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Case Studies</a>
-            <a href="/pricing" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Pricing</a>
             <a 
               href="https://outlook.office365.com/book/BalanceCxIntroduction@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true"
               target="_blank"
@@ -714,7 +713,6 @@ export default function Home() {
               <h4 className="font-semibold text-card-foreground mb-4">Product</h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li><a href="#highlighted-features" className="hover:text-card-foreground transition-colors">Features</a></li>
-                <li><a href="/pricing" className="hover:text-card-foreground transition-colors">Pricing</a></li>
                 <li><a href="#integrations" className="hover:text-card-foreground transition-colors">Integrations</a></li>
               </ul>
             </div>

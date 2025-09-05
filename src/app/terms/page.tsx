@@ -22,7 +22,6 @@ export default function TermsConditions() {
             <Link href="/#highlighted-features" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Features</Link>
             <Link href="/#industries" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Industries</Link>
             <Link href="/#testimonials" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Case Studies</Link>
-            <Link href="/pricing" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Pricing</Link>
             <a 
               href="https://outlook.office365.com/book/BalanceCxIntroduction@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true"
               target="_blank"
@@ -103,7 +102,7 @@ export default function TermsConditions() {
               <h3 className="text-xl font-semibold text-foreground mb-3">4.1 Subscription Plans</h3>
               <p className="text-muted-foreground mb-4">
                 We offer various subscription plans for our Services. The specific features, limitations, and pricing for each plan are 
-                described on our pricing page and in your subscription agreement.
+                described in your subscription agreement.
               </p>
 
               <h3 className="text-xl font-semibold text-foreground mb-3">4.2 Billing and Payment</h3>
@@ -370,7 +369,6 @@ export default function TermsConditions() {
               <h4 className="font-semibold text-card-foreground mb-4">Product</h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li><Link href="/#highlighted-features" className="hover:text-card-foreground transition-colors">Features</Link></li>
-                <li><Link href="/pricing" className="hover:text-card-foreground transition-colors">Pricing</Link></li>
                 <li><Link href="/#integrations" className="hover:text-card-foreground transition-colors">Integrations</Link></li>
               </ul>
             </div>
