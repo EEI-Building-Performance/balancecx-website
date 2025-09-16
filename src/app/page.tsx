@@ -8,7 +8,7 @@ export default function Home() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveUseCase((prev) => (prev + 1) % 3);
+      setActiveUseCase((prev) => (prev + 1) % 4);
     }, 5000); // Auto-scroll every 5 seconds
 
     return () => clearInterval(interval);
@@ -80,11 +80,29 @@ export default function Home() {
             </div>
             
             {/* Use Case Selector Tabs */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
               <button
                 onClick={() => setActiveUseCase(0)}
                 className={`p-4 rounded-xl border-2 transition-all cursor-pointer ${
                   activeUseCase === 0
+                    ? 'border-purple-600 bg-purple-600/10'
+                    : 'border-border bg-card hover:border-purple-600/50'
+                }`}
+              >
+                <div className="text-left">
+                  <h3 className="font-semibold text-base text-card-foreground mb-1">
+                    Portfolio Deployments
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Enterprise-wide analytics rollout with streamlined implementation
+                  </p>
+                </div>
+              </button>
+              
+              <button
+                onClick={() => setActiveUseCase(1)}
+                className={`p-4 rounded-xl border-2 transition-all cursor-pointer ${
+                  activeUseCase === 1
                     ? 'border-primary bg-primary/10'
                     : 'border-border bg-card hover:border-primary/50'
                 }`}
@@ -100,9 +118,9 @@ export default function Home() {
               </button>
               
               <button
-                onClick={() => setActiveUseCase(1)}
+                onClick={() => setActiveUseCase(2)}
                 className={`p-4 rounded-xl border-2 transition-all cursor-pointer ${
-                  activeUseCase === 1
+                  activeUseCase === 2
                     ? 'border-secondary bg-secondary/10'
                     : 'border-border bg-card hover:border-secondary/50'
                 }`}
@@ -118,9 +136,9 @@ export default function Home() {
               </button>
               
               <button
-                onClick={() => setActiveUseCase(2)}
+                onClick={() => setActiveUseCase(3)}
                 className={`p-4 rounded-xl border-2 transition-all cursor-pointer ${
-                  activeUseCase === 2
+                  activeUseCase === 3
                     ? 'border-accent bg-accent/10'
                     : 'border-border bg-card hover:border-accent/50'
                 }`}
@@ -141,9 +159,67 @@ export default function Home() {
         {/* Detailed Use Case Carousel */}
         <div className="relative overflow-hidden bg-gradient-to-b from-muted/30 to-background">
           <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-10 min-h-[600px]">
-            {/* New Construction */}
+            {/* Portfolio Deployments */}
             <div className={`absolute inset-0 px-6 lg:px-8 py-10 transition-opacity duration-700 ${
               activeUseCase === 0 ? 'opacity-100 z-10' : 'opacity-0 z-0'
+            }`}>
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <h3 className="text-2xl font-bold text-foreground mb-4">
+                    Portfolio Deployments
+                  </h3>
+                  <p className="text-base text-muted-foreground mb-4">
+                    We excel at portfolio-wide deployments and facilitate the process to get organizations up and using FDD quickly. Our proven approach ensures rapid, consistent implementation across your entire building portfolio.
+                  </p>
+                  <ul className="space-y-4 mb-8">
+                    <li className="flex items-start">
+                      <span className="text-purple-600 mr-3">✓</span>
+                      <span className="text-muted-foreground"><strong className="text-foreground">EEI Data Gateway:</strong> Our powerful low-cost IoT gateway makes it easy to securely collect device data on a local network and send it to the cloud</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-purple-600 mr-3">✓</span>
+                      <span className="text-muted-foreground"><strong className="text-foreground">Software Gateway:</strong> Software-only data gateway for deployment on enterprise virtual machines</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-purple-600 mr-3">✓</span>
+                      <span className="text-muted-foreground"><strong className="text-foreground">Onboard Process:</strong> Our onboarding process ensures all devices from the facility design are connected</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-purple-600 mr-3">✓</span>
+                      <span className="text-muted-foreground"><strong className="text-foreground">Single Sign-On:</strong> SSO is coming soon for enterprise customers</span>
+                    </li>
+                  </ul>
+                  <div className="flex gap-4">
+                    <span className="text-sm text-muted-foreground bg-muted px-4 py-2 rounded-full">Scalable Rollout</span>
+                    <span className="text-sm text-muted-foreground bg-muted px-4 py-2 rounded-full">Enterprise Ready</span>
+                    <span className="text-sm text-muted-foreground bg-muted px-4 py-2 rounded-full">Rapid Deployment</span>
+                  </div>
+                </div>
+                <div className="bg-card p-8 rounded-2xl border border-border">
+                  <div className="text-center">
+                    <div className="text-6xl font-bold text-purple-600 mb-4">10x</div>
+                    <p className="text-xl text-foreground font-semibold mb-2">Faster Portfolio Rollout</p>
+                    <p className="text-muted-foreground">Deploy analytics across your entire portfolio in weeks, not years</p>
+                    <div className="mt-8 pt-8 border-t border-border">
+                      <div className="grid grid-cols-2 gap-4 text-center">
+                        <div>
+                          <div className="text-2xl font-bold text-foreground">85%</div>
+                          <div className="text-sm text-muted-foreground">Lower Setup Cost</div>
+                        </div>
+                        <div>
+                          <div className="text-2xl font-bold text-foreground">100%</div>
+                          <div className="text-sm text-muted-foreground">Device Coverage</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* New Construction */}
+            <div className={`absolute inset-0 px-6 lg:px-8 py-10 transition-opacity duration-700 ${
+              activeUseCase === 1 ? 'opacity-100 z-10' : 'opacity-0 z-0'
             }`}>
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
@@ -201,7 +277,7 @@ export default function Home() {
             
             {/* Monitoring Based Commissioning */}
             <div className={`absolute inset-0 px-6 lg:px-8 py-10 transition-opacity duration-700 ${
-              activeUseCase === 1 ? 'opacity-100 z-10' : 'opacity-0 z-0'
+              activeUseCase === 2 ? 'opacity-100 z-10' : 'opacity-0 z-0'
             }`}>
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
@@ -259,54 +335,54 @@ export default function Home() {
             
             {/* Facility Operations */}
             <div className={`absolute inset-0 px-6 lg:px-8 py-10 transition-opacity duration-700 ${
-              activeUseCase === 2 ? 'opacity-100 z-10' : 'opacity-0 z-0'
+              activeUseCase === 3 ? 'opacity-100 z-10' : 'opacity-0 z-0'
             }`}>
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h3 className="text-2xl font-bold text-foreground mb-4">
-                    Facility Operations Platform
+                    Portfolio Deployments
                   </h3>
                   <p className="text-base text-muted-foreground mb-4">
-                    Your building&apos;s command center. Proactive monitoring and intelligent alerts keep your facility running at peak performance year-round.
+                    We excel at portfolio-wide deployments and facilitate the process to get organizations up and using FDD quickly. Our proven approach ensures rapid, consistent implementation across your entire building portfolio.
                   </p>
                   <ul className="space-y-4 mb-8">
                     <li className="flex items-start">
-                      <span className="text-accent mr-3">✓</span>
-                      <span className="text-muted-foreground"><strong className="text-foreground">Predictive Maintenance:</strong> Catch issues before they become failures</span>
+                      <span className="text-purple-600 mr-3">✓</span>
+                      <span className="text-muted-foreground"><strong className="text-foreground">EEI Data Gateway:</strong> Our powerful low-cost IoT gateway makes it easy to securely collect device data on a local network and send it to the cloud</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-accent mr-3">✓</span>
-                      <span className="text-muted-foreground"><strong className="text-foreground">Weekly Reports:</strong> Automated summaries keep teams informed</span>
+                      <span className="text-purple-600 mr-3">✓</span>
+                      <span className="text-muted-foreground"><strong className="text-foreground">Software Gateway:</strong> Software-only data gateway for deployment on enterprise virtual machines</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-accent mr-3">✓</span>
-                      <span className="text-muted-foreground"><strong className="text-foreground">Performance Tracking:</strong> Monitor KPIs and efficiency trends</span>
+                      <span className="text-purple-600 mr-3">✓</span>
+                      <span className="text-muted-foreground"><strong className="text-foreground">Onboard Process:</strong> Our onboarding process ensures all devices from the facility design are connected</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-accent mr-3">✓</span>
-                      <span className="text-muted-foreground"><strong className="text-foreground">Cost Prevention:</strong> Avoid expensive emergency repairs</span>
+                      <span className="text-purple-600 mr-3">✓</span>
+                      <span className="text-muted-foreground"><strong className="text-foreground">Single Sign-On:</strong> SSO is coming soon for enterprise customers</span>
                     </li>
                   </ul>
                   <div className="flex gap-4">
-                    <span className="text-sm text-muted-foreground bg-muted px-4 py-2 rounded-full">24/7 Monitoring</span>
-                    <span className="text-sm text-muted-foreground bg-muted px-4 py-2 rounded-full">Alert Management</span>
-                    <span className="text-sm text-muted-foreground bg-muted px-4 py-2 rounded-full">Reporting</span>
+                    <span className="text-sm text-muted-foreground bg-muted px-4 py-2 rounded-full">Scalable Rollout</span>
+                    <span className="text-sm text-muted-foreground bg-muted px-4 py-2 rounded-full">Enterprise Ready</span>
+                    <span className="text-sm text-muted-foreground bg-muted px-4 py-2 rounded-full">Rapid Deployment</span>
                   </div>
                 </div>
                 <div className="bg-card p-8 rounded-2xl border border-border">
                   <div className="text-center">
-                    <div className="text-6xl font-bold text-accent mb-4">40%</div>
-                    <p className="text-xl text-foreground font-semibold mb-2">Reduction in Downtime</p>
-                    <p className="text-muted-foreground">Average decrease in equipment failures and system outages</p>
+                    <div className="text-6xl font-bold text-purple-600 mb-4">10x</div>
+                    <p className="text-xl text-foreground font-semibold mb-2">Faster Portfolio Rollout</p>
+                    <p className="text-muted-foreground">Deploy analytics across your entire portfolio in weeks, not years</p>
                     <div className="mt-8 pt-8 border-t border-border">
                       <div className="grid grid-cols-2 gap-4 text-center">
                         <div>
-                          <div className="text-2xl font-bold text-foreground">60%</div>
-                          <div className="text-sm text-muted-foreground">Faster Response Time</div>
+                          <div className="text-2xl font-bold text-foreground">85%</div>
+                          <div className="text-sm text-muted-foreground">Lower Setup Cost</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-foreground">25%</div>
-                          <div className="text-sm text-muted-foreground">Lower O&M Costs</div>
+                          <div className="text-2xl font-bold text-foreground">100%</div>
+                          <div className="text-sm text-muted-foreground">Device Coverage</div>
                         </div>
                       </div>
                     </div>
@@ -318,7 +394,7 @@ export default function Home() {
           
           {/* Progress Indicators */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
-            {[0, 1, 2].map((index) => (
+            {[0, 1, 2, 3].map((index) => (
               <button
                 key={index}
                 onClick={() => setActiveUseCase(index)}
