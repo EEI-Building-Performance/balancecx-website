@@ -44,306 +44,79 @@ export default function TermsConditions() {
 
       <div className="py-16 px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold text-foreground mb-4">Terms & Conditions</h1>
-          <p className="text-muted-foreground mb-8">Effective Date: January 1, 2024</p>
+          <h1 className="text-4xl font-bold text-foreground mb-4">BalanceCx – Terms & Conditions</h1>
+          <p className="text-muted-foreground mb-8">Effective Date: September 16, 2025</p>
           
           <div className="prose prose-lg max-w-none space-y-8">
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">1. Agreement to Terms</h2>
               <p className="text-muted-foreground mb-4">
-                These Terms and Conditions (&ldquo;Terms&rdquo;) govern your use of the BalanceCx building analytics platform and related services 
-                (collectively, the &ldquo;Services&rdquo;) operated by BalanceCx (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;). By accessing or using our Services, you agree 
-                to be bound by these Terms. If you disagree with any part of these terms, then you may not access the Services.
+                Welcome to BalanceCx, a product of Engineering Economics, Inc. (EEI). By accessing or using our website, platform, and related services (collectively, the &ldquo;Services&rdquo;), you agree to these Terms &amp; Conditions (&ldquo;Terms&rdquo;). Please read them carefully.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">2. Description of Services</h2>
-              <p className="text-muted-foreground mb-4">
-                BalanceCx provides a cloud-based building analytics platform that includes:
-              </p>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">1. Use of Services</h2>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
-                <li>Real-time monitoring and analysis of building systems</li>
-                <li>Fault detection and diagnostics (FDD)</li>
-                <li>Energy optimization and reporting</li>
-                <li>Automated commissioning tools</li>
-                <li>Predictive maintenance capabilities</li>
-                <li>Integration with building automation systems</li>
-                <li>Data visualization and reporting dashboards</li>
-                <li>Alert and notification systems</li>
+                <li>You must be at least 18 years old and authorized to act on behalf of your organization.</li>
+                <li>You agree to use the Services only for lawful purposes and in accordance with these Terms.</li>
+                <li>You may not attempt to disrupt, reverse engineer, or gain unauthorized access to our systems.</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">3. Account Registration and Security</h2>
-              
-              <h3 className="text-xl font-semibold text-foreground mb-3">3.1 Account Creation</h3>
-              <p className="text-muted-foreground mb-4">
-                To access certain features of the Services, you must register for an account. You agree to:
-              </p>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">2. Accounts and Security</h2>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
-                <li>Provide accurate, current, and complete information</li>
-                <li>Maintain and promptly update your account information</li>
-                <li>Maintain the security of your password and account</li>
-                <li>Accept responsibility for all activities under your account</li>
-                <li>Notify us immediately of any unauthorized use</li>
-              </ul>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">3.2 Account Restrictions</h3>
-              <p className="text-muted-foreground mb-4">
-                You must be at least 18 years old and have the legal authority to enter into these Terms. You may not use another person&rsquo;s 
-                account without permission.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">4. Subscription and Payment Terms</h2>
-              
-              <h3 className="text-xl font-semibold text-foreground mb-3">4.1 Subscription Plans</h3>
-              <p className="text-muted-foreground mb-4">
-                We offer various subscription plans for our Services. The specific features, limitations, and pricing for each plan are 
-                described in your subscription agreement.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">4.2 Billing and Payment</h3>
-              <p className="text-muted-foreground mb-4">
-                By subscribing to our Services, you agree to:
-              </p>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
-                <li>Pay all applicable fees according to your subscription plan</li>
-                <li>Provide valid payment information</li>
-                <li>Authorize us to charge your payment method</li>
-                <li>Pay any applicable taxes</li>
-              </ul>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">4.3 Renewal and Cancellation</h3>
-              <p className="text-muted-foreground mb-4">
-                Subscriptions automatically renew unless cancelled before the renewal date. You may cancel your subscription at any time 
-                through your account settings or by contacting support. Cancellations take effect at the end of the current billing period.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">4.4 Refunds</h3>
-              <p className="text-muted-foreground mb-4">
-                Subscription fees are non-refundable except as required by law or as explicitly stated in your subscription agreement.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">5. Acceptable Use</h2>
-              
-              <h3 className="text-xl font-semibold text-foreground mb-3">5.1 Permitted Use</h3>
-              <p className="text-muted-foreground mb-4">
-                You may use the Services only for lawful purposes and in accordance with these Terms. You agree to use the Services only 
-                for your internal business purposes and not to resell or redistribute the Services without our written consent.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">5.2 Prohibited Use</h3>
-              <p className="text-muted-foreground mb-4">You agree not to:</p>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
-                <li>Use the Services for any unlawful purpose</li>
-                <li>Violate any applicable laws or regulations</li>
-                <li>Infringe upon intellectual property rights</li>
-                <li>Transmit viruses, malware, or harmful code</li>
-                <li>Attempt to gain unauthorized access to systems</li>
-                <li>Interfere with or disrupt the Services</li>
-                <li>Reverse engineer or decompile the Services</li>
-                <li>Use automated systems to access the Services without permission</li>
-                <li>Impersonate another person or entity</li>
-                <li>Collect or harvest user data without consent</li>
+                <li>To access certain features, you must create an account. You are responsible for maintaining the confidentiality of your login credentials.</li>
+                <li>You agree to notify us immediately if you suspect any unauthorized use of your account.</li>
+                <li>We reserve the right to suspend or terminate accounts that violate these Terms or compromise security.</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">6. Intellectual Property Rights</h2>
-              
-              <h3 className="text-xl font-semibold text-foreground mb-3">6.1 Our Intellectual Property</h3>
-              <p className="text-muted-foreground mb-4">
-                The Services and all content, features, and functionality are owned by BalanceCx and are protected by international 
-                copyright, trademark, patent, trade secret, and other intellectual property laws. You may not copy, modify, distribute, 
-                sell, or lease any part of our Services without our written permission.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">6.2 Your Data</h3>
-              <p className="text-muted-foreground mb-4">
-                You retain ownership of all data you submit to the Services (&ldquo;Your Data&rdquo;). By using the Services, you grant us a 
-                worldwide, non-exclusive license to use, store, process, and analyze Your Data solely to provide and improve the Services.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">6.3 Feedback</h3>
-              <p className="text-muted-foreground mb-4">
-                Any feedback, suggestions, or ideas you provide about the Services become our property and may be used without compensation 
-                or attribution to you.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">7. Data Privacy and Security</h2>
-              <p className="text-muted-foreground mb-4">
-                Your use of the Services is also governed by our Privacy Policy, which is incorporated into these Terms by reference. 
-                We implement reasonable security measures to protect Your Data, but cannot guarantee absolute security. You are responsible 
-                for maintaining the confidentiality of your account credentials.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">8. Service Level Agreement</h2>
-              
-              <h3 className="text-xl font-semibold text-foreground mb-3">8.1 Availability</h3>
-              <p className="text-muted-foreground mb-4">
-                We strive to maintain 99.9% uptime for the Services, excluding scheduled maintenance and circumstances beyond our control.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">8.2 Support</h3>
-              <p className="text-muted-foreground mb-4">
-                Technical support is provided according to your subscription plan. Standard support hours are Monday-Friday, 9 AM to 5 PM 
-                EST, excluding holidays.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">8.3 Maintenance</h3>
-              <p className="text-muted-foreground mb-4">
-                We will provide reasonable advance notice of scheduled maintenance that may affect Service availability.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">9. Third-Party Services</h2>
-              <p className="text-muted-foreground mb-4">
-                The Services may integrate with third-party services and APIs. Your use of these third-party services is governed by their 
-                respective terms and conditions. We are not responsible for the availability, accuracy, or reliability of third-party services.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">10. Disclaimers</h2>
-              
-              <h3 className="text-xl font-semibold text-foreground mb-3">10.1 Service Disclaimer</h3>
-              <p className="text-muted-foreground mb-4">
-                THE SERVICES ARE PROVIDED &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING 
-                BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR ACCURACY.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">10.2 No Professional Advice</h3>
-              <p className="text-muted-foreground mb-4">
-                The Services provide data analysis and recommendations but do not constitute professional engineering, architectural, or 
-                consulting advice. You should consult with qualified professionals before making decisions based on the Services&rsquo; output.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">11. Limitation of Liability</h2>
-              <p className="text-muted-foreground mb-4">
-                TO THE MAXIMUM EXTENT PERMITTED BY LAW, BALANCECX SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, 
-                OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, 
-                GOODWILL, OR OTHER INTANGIBLE LOSSES.
-              </p>
-              <p className="text-muted-foreground mb-4">
-                IN NO EVENT SHALL OUR AGGREGATE LIABILITY EXCEED THE AMOUNT PAID BY YOU TO BALANCECX IN THE TWELVE (12) MONTHS PRECEDING 
-                THE EVENT GIVING RISE TO THE LIABILITY.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">12. Indemnification</h2>
-              <p className="text-muted-foreground mb-4">
-                You agree to indemnify, defend, and hold harmless BalanceCx and its officers, directors, employees, agents, and affiliates 
-                from any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys&rsquo; fees) arising from:
-              </p>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">3. Intellectual Property</h2>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
-                <li>Your use of the Services</li>
-                <li>Your violation of these Terms</li>
-                <li>Your violation of any third-party rights</li>
-                <li>Your Data or content submitted through the Services</li>
+                <li>All content, software, analytics, designs, and trademarks provided through the Services are the property of BalanceCx or our licensors.</li>
+                <li>You are granted a limited, non-exclusive, non-transferable license to use the Services for your organization&rsquo;s internal purposes.</li>
+                <li>You may not copy, modify, or distribute our intellectual property without prior written consent.</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">13. Termination</h2>
-              
-              <h3 className="text-xl font-semibold text-foreground mb-3">13.1 Termination by You</h3>
-              <p className="text-muted-foreground mb-4">
-                You may terminate your account at any time by following the cancellation process in your account settings or contacting support.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">13.2 Termination by Us</h3>
-              <p className="text-muted-foreground mb-4">
-                We may suspend or terminate your account immediately if you breach these Terms or engage in conduct that we determine is 
-                harmful to the Services, other users, or our business interests.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">13.3 Effect of Termination</h3>
-              <p className="text-muted-foreground mb-4">
-                Upon termination, your right to use the Services will cease immediately. We may delete Your Data according to our data 
-                retention policy, though we may retain certain information as required by law.
-              </p>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">4. Data and Privacy</h2>
+              <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
+                <li>Our collection and use of personal information is described in our <Link href="/privacy">Privacy Policy</Link> and <Link href="/cookies">Cookie Policy</Link>.</li>
+                <li>By using the Services, you consent to those practices.</li>
+              </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">14. Governing Law and Dispute Resolution</h2>
-              
-              <h3 className="text-xl font-semibold text-foreground mb-3">14.1 Governing Law</h3>
-              <p className="text-muted-foreground mb-4">
-                These Terms shall be governed by and construed in accordance with the laws of the State of Delaware, without regard to its 
-                conflict of law provisions.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">14.2 Arbitration</h3>
-              <p className="text-muted-foreground mb-4">
-                Any dispute arising from these Terms shall be resolved through binding arbitration in accordance with the Commercial 
-                Arbitration Rules of the American Arbitration Association. The arbitration shall be conducted in Delaware, and judgment 
-                on the award may be entered in any court having jurisdiction.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">14.3 Class Action Waiver</h3>
-              <p className="text-muted-foreground mb-4">
-                You agree to bring any claims against BalanceCx only in your individual capacity and not as a plaintiff or class member 
-                in any purported class or representative proceeding.
-              </p>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">5. Service Availability</h2>
+              <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
+                <li>We strive to keep our Services available and reliable, but we do not guarantee uninterrupted access.</li>
+                <li>We may modify, suspend, or discontinue parts of the Services at any time without notice.</li>
+              </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">15. General Provisions</h2>
-              
-              <h3 className="text-xl font-semibold text-foreground mb-3">15.1 Entire Agreement</h3>
-              <p className="text-muted-foreground mb-4">
-                These Terms, together with our Privacy Policy and any subscription agreements, constitute the entire agreement between you 
-                and BalanceCx regarding the Services.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">15.2 Amendments</h3>
-              <p className="text-muted-foreground mb-4">
-                We reserve the right to modify these Terms at any time. We will notify you of material changes by posting the new Terms 
-                and updating the &ldquo;Effective Date.&rdquo; Your continued use of the Services after changes constitutes acceptance.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">15.3 Waiver and Severability</h3>
-              <p className="text-muted-foreground mb-4">
-                Our failure to enforce any provision of these Terms shall not constitute a waiver. If any provision is found to be 
-                unenforceable, the remaining provisions shall continue in full force.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">15.4 Assignment</h3>
-              <p className="text-muted-foreground mb-4">
-                You may not assign or transfer these Terms without our written consent. We may assign these Terms without restriction.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">15.5 Force Majeure</h3>
-              <p className="text-muted-foreground mb-4">
-                We shall not be liable for any failure or delay in performance due to circumstances beyond our reasonable control, including 
-                but not limited to acts of God, natural disasters, war, terrorism, riots, embargoes, or acts of civil or military authorities.
-              </p>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">6. Disclaimers and Limitation of Liability</h2>
+              <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
+                <li>The Services are provided on an &ldquo;as is&rdquo; and &ldquo;as available&rdquo; basis. We make no warranties, express or implied.</li>
+                <li>To the maximum extent permitted by law, BalanceCx is not liable for indirect, incidental, or consequential damages arising from your use of the Services.</li>
+                <li>Our total liability for any claim will not exceed the amount paid by you (if any) for access to the Services in the twelve months prior to the claim.</li>
+              </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">16. Contact Information</h2>
-              <p className="text-muted-foreground mb-4">
-                If you have any questions about these Terms, please contact us at:
-              </p>
-              <div className="bg-muted p-6 rounded-lg">
-                <p className="text-foreground font-semibold mb-2">BalanceCx</p>
-                <p className="text-muted-foreground">Email: legal@balancecx.com</p>
-                <p className="text-muted-foreground">Phone: 1-800-BALANCE</p>
-                <p className="text-muted-foreground">Address: 123 Building Analytics Way, Suite 100, Tech City, TC 12345</p>
-              </div>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">7. Governing Law</h2>
+              <p className="text-muted-foreground mb-4">These Terms are governed by the laws of the State of Colorado, without regard to conflict of laws principles.</p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">8. Changes to Terms</h2>
+              <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
+                <li>We may update these Terms from time to time. When we do, we will post the revised version with an updated effective date.</li>
+                <li>Your continued use of the Services after changes take effect constitutes your acceptance of the updated Terms.</li>
+              </ul>
             </section>
           </div>
         </div>
