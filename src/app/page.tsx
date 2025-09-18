@@ -425,24 +425,13 @@ export default function Home() {
             {/* AI Conduit Feature */}
             <div className="bg-card p-8 rounded-xl shadow-sm border border-border">
               <div className="mb-6">
-                {/* Placeholder for image - replace with actual image when available */}
-                <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-20 h-20 bg-primary/30 rounded-full mx-auto mb-2 flex items-center justify-center">
-                      <div className="w-12 h-12 bg-primary rounded-full"></div>
-                    </div>
-                    <p className="text-xs text-muted-foreground">AI Connector</p>
-                  </div>
-                </div>
-                {/* When image is available, use:
                 <Image
-                  src="/balanceCx_aiConnector.png"
-                  alt="BalanceCx AI Connector"
+                  src="/aiPriorities.png"
+                  alt="Your Building's AI Conduit"
                   width={400}
                   height={200}
-                  className="w-full h-48 object-cover rounded-lg"
+                  className="w-full h-48 object-cover object-top rounded-lg"
                 />
-                */}
               </div>
               <h3 className="text-xl font-semibold text-card-foreground mb-4">
                 Your Building&apos;s AI Conduit
@@ -455,16 +444,13 @@ export default function Home() {
             {/* Controls Validation Feature */}
             <div className="bg-card p-8 rounded-xl shadow-sm border border-border">
               <div className="mb-6">
-                <div className="w-full h-48 bg-gradient-to-br from-secondary/20 to-accent/20 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-20 h-20 bg-secondary/30 rounded-full mx-auto mb-2 flex items-center justify-center">
-                      <svg className="w-10 h-10 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <p className="text-xs text-muted-foreground">Scope Validation</p>
-                  </div>
-                </div>
+                <Image
+                  src="/BalanceCx AFT Image.png"
+                  alt="Controls Installation"
+                  width={400}
+                  height={200}
+                  className="w-full h-48 object-cover rounded-lg"
+                />
               </div>
               <h3 className="text-xl font-semibold text-card-foreground mb-4">
                 Controls Installation & Retrofit Scope Validation
@@ -477,16 +463,13 @@ export default function Home() {
             {/* Network View Feature */}
             <div className="bg-card p-8 rounded-xl shadow-sm border border-border">
               <div className="mb-6">
-                <div className="w-full h-48 bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-20 h-20 bg-accent/30 rounded-full mx-auto mb-2 flex items-center justify-center">
-                      <svg className="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
-                    </div>
-                    <p className="text-xs text-muted-foreground">Network Analytics</p>
-                  </div>
-                </div>
+                <Image
+                  src="/NetworkGraphImage.png"
+                  alt="View into your network"
+                  width={400}
+                  height={200}
+                  className="w-full h-48 object-cover rounded-lg"
+                />
               </div>
               <h3 className="text-xl font-semibold text-card-foreground mb-4">
                 Your View Into Your Network
