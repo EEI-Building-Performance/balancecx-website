@@ -807,7 +807,6 @@ export default function Home() {
               <div className="flex space-x-6 text-muted-foreground">
                 <a href="/privacy" className="hover:text-card-foreground transition-colors">Privacy Policy</a>
                 <a href="/cookies" className="hover:text-card-foreground transition-colors">Cookie Policy</a>
-                <a href="/terms" className="hover:text-card-foreground transition-colors">Terms & Conditions</a>
               </div>
             </div>
           </div>

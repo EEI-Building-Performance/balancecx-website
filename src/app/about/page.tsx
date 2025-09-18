@@ -148,7 +148,6 @@ export default function About() {
               <div className="flex space-x-6 text-muted-foreground">
                 <Link href="/privacy" className="hover:text-card-foreground transition-colors">Privacy Policy</Link>
                 <Link href="/cookies" className="hover:text-card-foreground transition-colors">Cookie Policy</Link>
-                <Link href="/terms" className="hover:text-card-foreground transition-colors">Terms & Conditions</Link>
               </div>
             </div>
           </div>
