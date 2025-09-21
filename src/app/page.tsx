@@ -482,6 +482,98 @@ export default function Home() {
         </div>
       </section>
 
+      {/* LEED v5 Points Section */}
+      <section id="leed-v5" className="py-20 px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+              LEED v5 Points
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              BalanceCx analytics is the easy button to getting LEED v5 Energy & Atmosphere credits. In one package BalanceCx provides both an Energy Information System (EIS) and an Enhanced Monitoring Based Commissioning (MBCx) Software tool.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Left side - Credits paths */}
+            <div className="bg-card p-6 rounded-lg border border-border">
+              <h3 className="text-xl font-semibold text-card-foreground mb-4">
+                Energy & Atmosphere Credits Paths
+              </h3>
+              
+              {/* BD&C Credits */}
+              <div className="mb-6">
+                <h4 className="font-semibold text-primary mb-3">LEED BD&C (Building Design & Construction)</h4>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span><strong>EAp4</strong> – Energy Metering and Reporting</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <div>
+                      <strong>EAc5</strong> – Enhanced Commissioning
+                      <ul className="ml-4 mt-1 space-y-1">
+                        <li>Option 2 – Monitoring Based Commissioning (MBCx)</li>
+                        <li className="ml-4">Path 1 – Basic Software (1 Point)</li>
+                        <li className="ml-4">Path 2 – Enhanced Software (2 points)</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              {/* O&M Credits */}
+              <div className="mb-6">
+                <h4 className="font-semibold text-secondary mb-3">LEED O&M (Operations & Maintenance)</h4>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="flex items-start">
+                    <span className="text-secondary mr-2">•</span>
+                    <span><strong>EAp2</strong> – Energy Monitoring and Reporting</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-secondary mr-2">•</span>
+                    <div>
+                      <strong>EAc7</strong> – Commissioning
+                      <ul className="ml-4 mt-1 space-y-1">
+                        <li>Option 2 – Monitoring Based Commissioning</li>
+                        <li className="ml-4">Path 1 – Basic MBCx (1 point)</li>
+                        <li className="ml-4">Path 2 – Enhanced MBCx (3 points)</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            {/* Right side - Easy Button Card */}
+            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 p-8 rounded-lg border border-border shadow-lg flex flex-col">
+              <div className="mb-auto">
+                <h3 className="text-xl font-bold text-card-foreground mb-6">
+                  Your Easy Button to the pre-requisite credit for Energy Metering & Reporting
+                </h3>
+                <div className="text-muted-foreground">
+                  <p className="leading-relaxed">
+                    BalanceCx connects to building metering devices and Energy Star Portfolio Manager, providing seamless setup and data exchange. BalanceCx meets all LEED v5 requirements and includes the creation of all documentation needed for upload to LEED online.
+                  </p>
+                </div>
+              </div>
+              <div className="mt-6">
+                <a
+                  href="https://outlook.office365.com/book/BalanceCxIntroduction@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-full bg-primary text-primary-foreground px-6 py-3 rounded-lg text-base font-bold hover:opacity-90 transition-opacity shadow-md"
+                >
+                  Easy →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Integrations Section */}
       <section id="integrations" className="py-20 px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
