@@ -686,8 +686,7 @@ export default function Home() {
             <div className="p-2">
               <div className="w-12 h-12 bg-muted rounded-lg mx-auto mb-2 flex items-center justify-center">
                 <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 13h2l2-9 2 13 2-6h2m2 0h2l2-5 2 12 2-7h2" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M12 5v14M5 12h14" />
                 </svg>
               </div>
               <h3 className="text-sm font-semibold text-foreground">Healthcare</h3>
@@ -708,7 +707,8 @@ export default function Home() {
             <div className="p-2">
               <div className="w-12 h-12 bg-muted rounded-lg mx-auto mb-2 flex items-center justify-center">
                 <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 16l-4-4V7a2 2 0 00-2-2H9a2 2 0 00-2 2v5l-4 4m14 0v5a2 2 0 01-2 2H9a2 2 0 01-2-2v-5m14 0H7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M22 2L11 13" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M22 2L15 22L11 13L2 9L22 2" />
                 </svg>
               </div>
               <h3 className="text-sm font-semibold text-foreground">Aviation</h3>
