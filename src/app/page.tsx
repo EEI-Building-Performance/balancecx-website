@@ -186,7 +186,7 @@ export default function Home() {
                     </li>
                     <li className="flex items-start">
                       <span className="text-purple-600 mr-3">✓</span>
-                      <span className="text-muted-foreground"><strong className="text-foreground">Single Sign-On:</strong> SSO is coming soon for enterprise customers</span>
+                      <span className="text-muted-foreground"><strong className="text-foreground">Single Sign-On:</strong> SSO for enterprise customer user management</span>
                     </li>
                   </ul>
                   <div className="flex gap-4">
@@ -360,7 +360,7 @@ export default function Home() {
                     </li>
                     <li className="flex items-start">
                       <span className="text-purple-600 mr-3">✓</span>
-                      <span className="text-muted-foreground"><strong className="text-foreground">Single Sign-On:</strong> SSO is coming soon for enterprise customers</span>
+                      <span className="text-muted-foreground"><strong className="text-foreground">Single Sign-On:</strong> SSO for enterprise customer user management</span>
                     </li>
                   </ul>
                   <div className="flex gap-4">
@@ -589,81 +589,67 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Device Data Card */}
             <div className="bg-card rounded-xl p-8 shadow-sm border border-border">
-              <h3 className="text-2xl font-semibold text-card-foreground mb-8">Device Data</h3>
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <Image src="/BACnet-Logo-New.gif" alt="BACnet" width={60} height={60} className="object-contain" />
+              <h3 className="text-2xl font-semibold text-card-foreground mb-6">Device Data</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="text-purple-600 mr-3">•</span>
                   <span className="text-lg text-muted-foreground">BACnet</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Image src="/modbus_logo.png" alt="Modbus" width={60} height={60} className="object-contain" />
+                </li>
+                <li className="flex items-start">
+                  <span className="text-purple-600 mr-3">•</span>
                   <span className="text-lg text-muted-foreground">Modbus</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Image src="/mqtt_logo.png" alt="MQTT" width={60} height={60} className="object-contain" />
+                </li>
+                <li className="flex items-start">
+                  <span className="text-purple-600 mr-3">•</span>
                   <span className="text-lg text-muted-foreground">MQTT</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-[60px] h-[60px] bg-muted rounded flex items-center justify-center">
-                    <span className="text-base font-semibold">SQL</span>
-                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-purple-600 mr-3">•</span>
                   <span className="text-lg text-muted-foreground">SQL</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Image src="/haystack.png" alt="Haystack" width={60} height={60} className="object-contain" />
+                </li>
+                <li className="flex items-start">
+                  <span className="text-purple-600 mr-3">•</span>
                   <span className="text-lg text-muted-foreground">Haystack API</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-[60px] h-[60px] bg-muted rounded flex items-center justify-center">
-                    <span className="text-base font-semibold">OPC</span>
-                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-purple-600 mr-3">•</span>
                   <span className="text-lg text-muted-foreground">OPC UA</span>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
 
             {/* Other Integrations Card */}
             <div className="bg-card rounded-xl p-8 shadow-sm border border-border">
-              <h3 className="text-2xl font-semibold text-card-foreground mb-8">Other Integrations</h3>
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <Image src="/ESPM_logo.png" alt="Energy Star Portfolio Manager" width={60} height={60} className="object-contain" />
+              <h3 className="text-2xl font-semibold text-card-foreground mb-6">Other Integrations</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="text-purple-600 mr-3">•</span>
                   <span className="text-lg text-muted-foreground">Energy Star Portfolio Manager</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-[60px] h-[60px] bg-muted rounded flex items-center justify-center">
-                    <span className="text-base font-semibold">M</span>
-                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-purple-600 mr-3">•</span>
                   <span className="text-lg text-muted-foreground">Monnit</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-[60px] h-[60px] bg-blue-600 rounded flex items-center justify-center">
-                    <span className="text-white text-base font-semibold">W</span>
-                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-purple-600 mr-3">•</span>
                   <span className="text-lg text-muted-foreground">Microsoft Word</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-[60px] h-[60px] bg-green-600 rounded flex items-center justify-center">
-                    <span className="text-white text-base font-semibold">E</span>
-                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-purple-600 mr-3">•</span>
                   <span className="text-lg text-muted-foreground">Microsoft Excel</span>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
 
             {/* AI Integrations Card */}
             <div className="bg-card rounded-xl p-8 shadow-sm border border-border">
-              <h3 className="text-2xl font-semibold text-card-foreground mb-8">AI Integrations</h3>
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <Image src="/chatGPT_logo.png" alt="ChatGPT" width={60} height={60} className="object-contain" />
+              <h3 className="text-2xl font-semibold text-card-foreground mb-6">AI Integrations</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="text-purple-600 mr-3">•</span>
                   <span className="text-lg text-muted-foreground">ChatGPT</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Image src="/gemini logo.png" alt="Gemini" width={60} height={60} className="object-contain" />
-                  <span className="text-lg text-muted-foreground">Gemini</span>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

@@ -1,43 +1,7 @@
-'use client';
-
-import React, { useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    phone: '',
-    message: ''
-  });
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Construct the email body
-    const subject = encodeURIComponent(`Contact Form Submission from ${formData.name}`);
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\n` +
-      `Email: ${formData.email}\n` +
-      `Company: ${formData.company}\n` +
-      `Phone: ${formData.phone}\n\n` +
-      `Message:\n${formData.message}`
-    );
-    
-    // Open email client with pre-filled data
-    window.location.href = `mailto:btalbot@eeibuildingperformance.com?subject=${subject}&body=${body}`;
-    
-    // Clear the form
-    setFormData({ name: '', email: '', company: '', phone: '', message: '' });
-  };
-
   return (
     <div className="min-h-screen bg-background">
       {/* Header/Navigation */}
@@ -85,96 +49,9 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <div className="bg-card p-8 rounded-xl shadow-sm border border-border">
-              <h2 className="text-2xl font-semibold text-card-foreground mb-6">Send us a message</h2>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-muted-foreground mb-2">
-                    Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-ring"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-muted-foreground mb-2">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-ring"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-muted-foreground mb-2">
-                    Company
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-ring"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-muted-foreground mb-2">
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-ring"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-muted-foreground mb-2">
-                    Message *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    required
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-ring"
-                    placeholder="Tell us about your building and how we can help..."
-                  />
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
-                >
-                  Send Message
-                </button>
-              </form>
-            </div>
-
-            {/* Contact Information */}
-            <div className="space-y-8">
+          <div className="flex justify-center">
+            {/* Contact Information - Centered */}
+            <div className="w-full max-w-xl">
               <div className="bg-card p-8 rounded-xl shadow-sm border border-border">
                 <h2 className="text-2xl font-semibold text-card-foreground mb-6">Get in touch</h2>
                 <div className="space-y-4">
@@ -203,12 +80,11 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-card-foreground mb-2">Support</h3>
                     <p className="text-muted-foreground">
-                      For existing customers needing assistance you can review the documentation when logged in, contact your EEI Building Performance representative, send us a message here, or use the schedule a demo button to schedule a meeting with us.
+                      For existing customers needing assistance you can review the documentation when logged in, contact your EEI Building Performance representative, or use the schedule a demo button to schedule a meeting with us.
                     </p>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
