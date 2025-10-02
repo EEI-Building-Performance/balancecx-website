@@ -784,25 +784,39 @@ export default function Home() {
             </div>
             
             <div className="bg-card p-8 rounded-xl shadow-sm border border-border">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-3 h-3 bg-secondary rounded-full"></div>
-                <h3 className="font-semibold text-card-foreground">Washington & Lee University</h3>
-              </div>
-              <p className="text-muted-foreground mb-4">
-                &ldquo;Indoor environmental quality improved 40% across campus with BalanceCx actionable intelligence and automated KPI tracking for all building systems.&rdquo;
-              </p>
-              <div className="text-sm text-secondary font-medium">Campus-Wide Performance Excellence</div>
+              <a 
+                href="https://eeibuildingperformance.com/case-study/campus-performance-improvements-at-pasco-school-district/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-3 h-3 bg-secondary rounded-full"></div>
+                  <h3 className="font-semibold text-card-foreground">Pasco School District</h3>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  Pasco School District used BalanceCx to consolidate building data, automate fault detection, and prioritize maintenance, improving energy efficiency and meeting Washington Clean Buildings standards.
+                </p>
+                <div className="text-sm text-secondary font-medium">Education Case Study</div>
+              </a>
             </div>
             
             <div className="bg-card p-8 rounded-xl shadow-sm border border-border">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-3 h-3 bg-accent rounded-full"></div>
-                <h3 className="font-semibold text-card-foreground">Ohio State Wexner Medical Center</h3>
-              </div>
-              <p className="text-muted-foreground mb-4">
-                &ldquo;Mission-critical healthcare operations rely on BalanceCx condition-based maintenance and 24/7 equipment reliability monitoring for patient safety.&rdquo;
-              </p>
-              <div className="text-sm text-accent font-medium">Healthcare Facility Excellence</div>
+              <a
+                href="https://eeibuildingperformance.com/case-study/delivering-analytics-for-new-construction-at-the-ohio-stateuniversity-wexner-medical-center/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-3 h-3 bg-accent rounded-full"></div>
+                  <h3 className="font-semibold text-card-foreground">Ohio State Wexner Medical Center</h3>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  &ldquo;Mission-critical healthcare operations rely on BalanceCx condition-based maintenance and 24/7 equipment reliability monitoring for patient safety.&rdquo;
+                </p>
+                <div className="text-sm text-accent font-medium">Healthcare Facility Excellence</div>
+              </a>
             </div>
           </div>
         </div>
