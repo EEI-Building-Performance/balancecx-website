@@ -813,7 +813,7 @@ export default function Home() {
                   <h3 className="font-semibold text-card-foreground">Ohio State Wexner Medical Center</h3>
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  &ldquo;Mission-critical healthcare operations rely on BalanceCx condition-based maintenance and 24/7 equipment reliability monitoring for patient safety.&rdquo;
+                  EEI used BalanceCx during construction to automate setpoint and sequence validation, delivering real-time insights and continuous monitoring that improved commissioning quality, saved labor, and ensured a higher-performing hospital.
                 </p>
                 <div className="text-sm text-accent font-medium">Healthcare Facility Excellence</div>
               </a>
