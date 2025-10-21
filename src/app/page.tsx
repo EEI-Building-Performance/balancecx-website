@@ -775,7 +775,7 @@ export default function Home() {
                 Click below to download our overview brochure PDF to share with others.
               </p>
               <a 
-                href="/Analytics Services Overview (2).pdf"
+                href="/BalanceCx Analytics.pdf"
                 download
                 className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors"
               >
