@@ -12,7 +12,7 @@ const CASE_PASCO =
 const CASE_OSU =
   "https://eeibuildingperformance.com/case-study/delivering-analytics-for-new-construction-at-the-ohio-stateuniversity-wexner-medical-center/";
 
-const WHITE_LOGO = "/BalanceCx Logo - White.png";
+const WHITE_LOGO = "/balancecx-logo-white-trim.png";
 const AFT_IMG = "/BalanceCx AFT Image.png";
 const NETWORK_IMG = "/bacnet-network.png";
 const COPILOT_IMG = "/engineer-copilot.png";
@@ -69,12 +69,9 @@ function FeatureMeta({ num, label }: { num: string; label: string }) {
 
 function LeedPath({ path, label, pts }: { path: string; label: string; pts: string }) {
   return (
-    <div className="flex items-center gap-[10px]">
-      <span className="whitespace-nowrap rounded-[5px] border border-line bg-surface-2 px-2 py-[3px] font-display text-[11px] font-semibold text-muted-ink">
-        {path}
-      </span>
-      <span className="text-[12.5px] leading-[1.4] text-body">{label}</span>
-      <span className="ml-auto whitespace-nowrap font-mono text-[11px] font-semibold text-mint-600">{pts}</span>
+    <div className="text-[13.5px] leading-[1.6] text-body">
+      <span className="font-semibold text-ink">{path}</span> — {label}{" "}
+      <span className="font-medium text-mint-600">({pts})</span>
     </div>
   );
 }
@@ -315,7 +312,7 @@ export default function Home() {
       {/* ===================== NAV ===================== */}
       <nav className="sticky top-0 z-50 flex items-center justify-between border-b border-ink-border bg-ink/95 px-5 py-[14px] backdrop-blur-[8px] lg:px-12 lg:py-[18px]">
         <div className="flex items-center gap-12">
-          <Image src={WHITE_LOGO} alt="BalanceCx" width={147} height={34} className="h-[26px] w-auto lg:h-[34px]" priority />
+          <Image src={WHITE_LOGO} alt="BalanceCx" width={558} height={100} className="h-[24px] w-auto lg:h-[32px]" priority />
           <div className="hidden items-center gap-[30px] text-[14px] font-medium lg:flex">
             {navItems.map((it) => (
               <a key={it.href} href={it.href} className={navLink}>{it.label}</a>
@@ -349,7 +346,7 @@ export default function Home() {
       {menuOpen && (
         <div className="lightbox-fade fixed inset-0 z-[60] flex flex-col bg-ink px-6 py-[18px] lg:hidden">
           <div className="mb-10 flex items-center justify-between">
-            <Image src={WHITE_LOGO} alt="BalanceCx" width={147} height={34} className="h-[26px] w-auto" />
+            <Image src={WHITE_LOGO} alt="BalanceCx" width={558} height={100} className="h-[24px] w-auto" />
             <button
               type="button"
               onClick={() => setMenuOpen(false)}
@@ -495,7 +492,7 @@ export default function Home() {
               </h3>
               <p className="m-0 mb-4 text-[14.5px] leading-[1.6] text-body lg:mb-[22px] lg:text-[16px]">
                 An AI assistant that reads each fault&apos;s full context, explains the likely root causes ranked by
-                probability, and turns every recommendation into an actionable task — so your team spends time fixing,
+                probability, and turns every recommendation into an actionable task, so your team spends time fixing,
                 not diagnosing.
               </p>
               <div className="flex flex-col gap-[10px] text-[14px] text-body lg:gap-3">
@@ -607,11 +604,8 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-center gap-3 lg:mb-[6px]">
-                    <Image src={WHITE_LOGO} alt="BalanceCx" width={104} height={24} className="h-[22px] w-auto lg:h-6" />
-                    <span className="rounded-md border border-mint/25 bg-mint/10 px-[9px] py-1 font-mono text-[10.5px] font-semibold tracking-[0.06em] text-mint">
-                      UNIFIED PLATFORM
-                    </span>
+                  <div className="flex items-center lg:mb-[6px]">
+                    <Image src={WHITE_LOGO} alt="BalanceCx" width={558} height={100} className="h-[24px] w-auto lg:h-[30px]" />
                   </div>
                   <div className="hidden max-w-[680px] text-[13px] leading-[1.55] text-white/[0.72] lg:block">
                     One platform normalizes, stores, and analyzes every point.
@@ -682,7 +676,6 @@ export default function Home() {
               <div className="text-left">
                 <div className="mb-1 flex items-center gap-[10px]">
                   <span className="font-display text-[17px] font-bold text-white">EEI Data Gateway</span>
-                  <span className="font-mono text-[10px] font-semibold tracking-[0.05em] text-mint">COLLECT &amp; NORMALIZE</span>
                 </div>
                 <div className="max-w-[520px] text-[12.5px] leading-[1.55] text-white/[0.62]">
                   Securely collects device data on the local network and normalizes it in the cloud — hardware or
@@ -766,8 +759,8 @@ export default function Home() {
                       Option 2 — Monitoring Based Commissioning (MBCx)
                     </div>
                     <div className="flex flex-col gap-2">
-                      <LeedPath path="Path 1" label="Basic Software" pts="1 pt" />
-                      <LeedPath path="Path 2" label="Enhanced Software" pts="2 pts" />
+                      <LeedPath path="Path 1" label="Basic Software" pts="1 point" />
+                      <LeedPath path="Path 2" label="Enhanced Software" pts="2 points" />
                     </div>
                   </div>
                 </div>
@@ -791,8 +784,8 @@ export default function Home() {
                       Option 2 — Monitoring Based Commissioning
                     </div>
                     <div className="flex flex-col gap-2">
-                      <LeedPath path="Path 1" label="Basic MBCx" pts="1 pt" />
-                      <LeedPath path="Path 2" label="Enhanced MBCx" pts="3 pts" />
+                      <LeedPath path="Path 1" label="Basic MBCx" pts="1 point" />
+                      <LeedPath path="Path 2" label="Enhanced MBCx" pts="3 points" />
                     </div>
                   </div>
                 </div>
@@ -947,7 +940,7 @@ export default function Home() {
         <div className="mx-auto max-w-[1200px]">
           <div className="grid grid-cols-2 gap-x-6 gap-y-8 border-b border-ink-border pb-8 md:grid-cols-[1.6fr_1fr_1fr] md:gap-10 md:pb-10">
             <div className="col-span-2 md:col-span-1">
-              <Image src={WHITE_LOGO} alt="BalanceCx" width={104} height={24} className="mb-[18px] h-6 w-auto" />
+              <Image src={WHITE_LOGO} alt="BalanceCx" width={558} height={100} className="mb-[18px] h-[18px] w-auto" />
               <p className="m-0 max-w-[340px] text-[14px] leading-[1.6] text-white/55">
                 Analytics platform for building performance optimization, commissioning, and facility operations.
               </p>
