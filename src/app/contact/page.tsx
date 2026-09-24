@@ -21,7 +21,7 @@ export default function Contact() {
             <Link href="/#industries" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Industries</Link>
             <Link href="/#testimonials" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Case Studies</Link>
             <a 
-              href="https://outlook.office365.com/book/BalanceCxIntroduction@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true"
+              href="https://outlook.office365.com/book/BalanceCxIntroduction1@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity text-base"
@@ -57,8 +57,8 @@ export default function Contact() {
                 <div className="space-y-4">
                   <div>
                     <h3 className="font-semibold text-card-foreground mb-2">Email</h3>
-                    <a href="mailto:btalbot@eeibuildingperformance.com" className="text-primary hover:text-primary/80">
-                      btalbot@eeibuildingperformance.com
+                    <a href="mailto:jkeeler@eeibuildingperformance.com" className="text-primary hover:text-primary/80">
+                      jkeeler@eeibuildingperformance.com
                     </a>
                   </div>
                   
@@ -68,7 +68,7 @@ export default function Contact() {
                       See BalanceCx in action with a personalized demo
                     </p>
                     <a 
-                      href="https://outlook.office365.com/book/BalanceCxIntroduction@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true"
+                      href="https://outlook.office365.com/book/BalanceCxIntroduction1@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center text-primary hover:text-primary/80"
