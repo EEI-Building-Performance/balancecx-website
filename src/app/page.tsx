@@ -5,7 +5,7 @@ import { useState, type ReactNode } from 'react';
 
 /* ---- Real destinations (preserved from the previous site) ---- */
 const BOOKING_URL =
-  "https://outlook.office365.com/book/BalanceCxIntroduction@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true";
+  "https://outlook.office365.com/book/BalanceCxIntroduction1@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true";
 const LOGIN_URL = "https://eei.balancecx.com/#/signIn";
 const CASE_PASCO =
   "https://eeibuildingperformance.com/case-study/campus-performance-improvements-at-pasco-school-district/";
