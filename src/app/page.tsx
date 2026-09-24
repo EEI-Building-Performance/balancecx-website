@@ -506,10 +506,10 @@ export default function Home() {
             <BrowserFrame
               src={COPILOT_IMG}
               alt="Engineer Copilot — AI fault analysis & resolution"
-              width={872}
-              height={1127}
+              width={1916}
+              height={1000}
               onClick={() =>
-                setLightbox({ src: COPILOT_IMG, w: 872, h: 1127, alt: "Engineer Copilot — AI fault analysis & resolution" })
+                setLightbox({ src: COPILOT_IMG, w: 1916, h: 1000, alt: "Engineer Copilot — AI fault analysis & resolution" })
               }
             />
           </div>
