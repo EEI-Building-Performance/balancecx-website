@@ -520,10 +520,10 @@ export default function Home() {
               <BrowserFrame
                 url="eei.balancecx.com / functional-testing / setup"
                 src={AFT_IMG}
-                alt="BalanceCx Test Results heat map"
+                alt="BalanceCx Functional Testing"
                 width={1916}
                 height={1000}
-                onClick={() => setLightbox({ src: AFT_IMG, w: 1916, h: 1000, alt: "BalanceCx Test Results heat map" })}
+                onClick={() => setLightbox({ src: AFT_IMG, w: 1916, h: 1000, alt: "BalanceCx Functional Testing" })}
               />
             </div>
             <div className="order-1 lg:order-2">
