@@ -1,138 +1,99 @@
-import Image from "next/image";
-import Link from "next/link";
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
+import PageShell, { ArrowLink, PageHero } from "@/components/PageShell";
+import { BOOKING_URL, CONTACT_EMAIL, LOGIN_URL } from "@/lib/links";
+
+export const metadata: Metadata = {
+  title: "Contact — BalanceCx",
+  description: "Get in touch with the BalanceCx team at EEI. Email us, book a demo, or reach your support representative.",
+};
+
+function Icon({ d }: { d: string }) {
+  return (
+    <svg
+      width={22}
+      height={22}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#5CE8C8"
+      strokeWidth={1.75}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      dangerouslySetInnerHTML={{ __html: d }}
+    />
+  );
+}
+
+function ContactCard({
+  icon,
+  title,
+  children,
+  action,
+}: {
+  icon: ReactNode;
+  title: string;
+  children: ReactNode;
+  action: ReactNode;
+}) {
+  return (
+    <div className="flex flex-col rounded-[14px] border border-line bg-white p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(20,24,28,0.10)] lg:p-7">
+      <div className="mb-4 flex h-[42px] w-[42px] items-center justify-center rounded-[10px] bg-ink">{icon}</div>
+      <h2 className="m-0 mb-2 font-display text-[19px] font-bold leading-[1.2] text-ink">{title}</h2>
+      <p className="m-0 mb-5 text-[14.5px] leading-[1.6] text-body">{children}</p>
+      <div className="mt-auto border-t border-line-soft pt-4">{action}</div>
+    </div>
+  );
+}
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header/Navigation */}
-      <header className="py-6 px-6 lg:px-8 border-b border-border">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <Link href="/">
-            <Image
-              src="/BalanceCx Logo - Black.png"
-              alt="BalanceCx Logo"
-              width={180}
-              height={60}
-              className="h-12 w-auto"
-            />
-          </Link>
-          <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/#highlighted-features" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Features</Link>
-            <Link href="/#industries" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Industries</Link>
-            <Link href="/#testimonials" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Case Studies</Link>
-            <a 
-              href="https://outlook.office365.com/book/BalanceCxIntroduction1@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity text-base"
-            >
-              Schedule Demo
-            </a>
-            <a 
-              href="https://eei.balancecx.com/#/signIn" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-border text-foreground px-6 py-2.5 rounded-lg font-semibold hover:bg-muted transition-colors text-base"
-            >
-              Log In
-            </a>
-          </nav>
-        </div>
-      </header>
+    <PageShell>
+      <PageHero
+        eyebrow="Contact"
+        title={
+          <>
+            Ready to transform your <span className="text-mint">building operations?</span>
+          </>
+        }
+        lede="Get in touch with our team. We typically respond within one business day."
+      />
 
-      <div className="py-16 px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-foreground mb-4">Contact Us</h1>
-            <p className="text-xl text-muted-foreground">
-              Ready to transform your building operations? Get in touch with our team.
-            </p>
-          </div>
+      <section className="px-6 py-11 lg:px-12 lg:py-[72px]">
+        <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-5 md:grid-cols-3">
+          <ContactCard
+            icon={<Icon d='<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>' />}
+            title="Email"
+            action={<ArrowLink href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</ArrowLink>}
+          >
+            Questions about the platform, pricing, or a specific project. Send us a note and we&apos;ll follow up.
+          </ContactCard>
 
-          <div className="flex justify-center">
-            {/* Contact Information - Centered */}
-            <div className="w-full max-w-xl">
-              <div className="bg-card p-8 rounded-xl shadow-sm border border-border">
-                <h2 className="text-2xl font-semibold text-card-foreground mb-6">Get in touch</h2>
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="font-semibold text-card-foreground mb-2">Email</h3>
-                    <a href="mailto:jkeeler@eeibuildingperformance.com" className="text-primary hover:text-primary/80">
-                      jkeeler@eeibuildingperformance.com
-                    </a>
-                  </div>
-                  
-                  <div>
-                    <h3 className="font-semibold text-card-foreground mb-2">Schedule a Demo</h3>
-                    <p className="text-muted-foreground mb-2">
-                      See BalanceCx in action with a personalized demo
-                    </p>
-                    <a 
-                      href="https://outlook.office365.com/book/BalanceCxIntroduction1@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-primary hover:text-primary/80"
-                    >
-                      Book a demo →
-                    </a>
-                  </div>
-                  
-                  <div>
-                    <h3 className="font-semibold text-card-foreground mb-2">Support</h3>
-                    <p className="text-muted-foreground">
-                      For existing customers needing assistance you can review the documentation when logged in, contact your EEI Building Performance representative, or use the schedule a demo button to schedule a meeting with us.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+          <ContactCard
+            icon={<Icon d='<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>' />}
+            title="Schedule a Demo"
+            action={
+              <ArrowLink href={BOOKING_URL} external>
+                Book a demo
+              </ArrowLink>
+            }
+          >
+            See BalanceCx in action with a personalized walkthrough from an EEI building performance engineer.
+          </ContactCard>
 
-      {/* Footer */}
-      <footer className="bg-card border-t border-border py-12 px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="col-span-1 md:col-span-2">
-              <Image
-                src="/BalanceCx Logo - Black.png"
-                alt="BalanceCx Logo"
-                width={160}
-                height={50}
-                className="h-10 w-auto mb-4"
-              />
-              <p className="text-muted-foreground max-w-md">
-                Analytics platform for building performance optimization, commissioning, and facility operations.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-card-foreground mb-4">Product</h4>
-              <ul className="space-y-2 text-muted-foreground">
-                <li><Link href="/#highlighted-features" className="hover:text-card-foreground transition-colors">Features</Link></li>
-                <li><Link href="/#highlighted-features" className="hover:text-card-foreground transition-colors">Integrations</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-card-foreground mb-4">Company</h4>
-              <ul className="space-y-2 text-muted-foreground">
-                <li><Link href="/about" className="hover:text-card-foreground transition-colors">About</Link></li>
-                <li><Link href="/contact" className="hover:text-card-foreground transition-colors">Contact</Link></li>
-                <li><Link href="/support" className="hover:text-card-foreground transition-colors">Support</Link></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-border mt-8 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-muted-foreground mb-4 md:mb-0">&copy; 2024 BalanceCx. All rights reserved.</p>
-              <div className="flex space-x-6 text-muted-foreground">
-                <Link href="/privacy" className="hover:text-card-foreground transition-colors">Privacy Policy</Link>
-                <Link href="/cookies" className="hover:text-card-foreground transition-colors">Cookie Policy</Link>
-              </div>
-            </div>
-          </div>
+          <ContactCard
+            icon={<Icon d='<circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/>' />}
+            title="Support"
+            action={
+              <ArrowLink href={LOGIN_URL} external>
+                Log in for documentation
+              </ArrowLink>
+            }
+          >
+            Existing customers can review the documentation when logged in, contact their EEI Building Performance
+            representative, or book a meeting with us using the demo link.
+          </ContactCard>
         </div>
-      </footer>
-    </div>
+      </section>
+    </PageShell>
   );
 }

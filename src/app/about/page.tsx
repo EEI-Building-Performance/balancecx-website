@@ -1,158 +1,119 @@
-'use client';
+import type { Metadata } from "next";
+import PageShell, { BulletList, Check, CtaBand, Eyebrow, PageHero, Prose, SectionTitle } from "@/components/PageShell";
+import { BOOKING_URL } from "@/lib/links";
 
-import Image from "next/image";
-import Link from "next/link";
+export const metadata: Metadata = {
+  title: "About — BalanceCx",
+  description:
+    "BalanceCx is EEI's building performance analytics platform: fault detection, automated functional testing, and AI-ready data across the building lifecycle.",
+};
+
+const WHY = [
+  {
+    title: "Proven Results",
+    body: "Average 30% reduction in energy costs and 40% decrease in equipment downtime.",
+  },
+  {
+    title: "Easy Integration",
+    body: "Works with your existing BAS, IoT devices, and building systems.",
+  },
+  {
+    title: "AI-Ready Platform",
+    body: "Structured data optimized for next-generation analytics and automation.",
+  },
+  {
+    title: "Expert Support",
+    body: "Dedicated team of building performance engineers and data scientists.",
+  },
+];
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header/Navigation */}
-      <header className="py-6 px-6 lg:px-8 border-b border-border">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <Link href="/">
-            <Image
-              src="/BalanceCx Logo - Black.png"
-              alt="BalanceCx Logo"
-              width={180}
-              height={60}
-              className="h-12 w-auto"
-            />
-          </Link>
-          <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/#highlighted-features" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Features</Link>
-            <Link href="/#industries" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Industries</Link>
-            <Link href="/#testimonials" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Case Studies</Link>
-            <a 
-              href="https://outlook.office365.com/book/BalanceCxIntroduction1@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity text-base"
-            >
-              Schedule Demo
-            </a>
-            <a 
-              href="https://eei.balancecx.com/#/signIn" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-border text-foreground px-6 py-2.5 rounded-lg font-semibold hover:bg-muted transition-colors text-base"
-            >
-              Log In
-            </a>
-          </nav>
-        </div>
-      </header>
+    <PageShell>
+      <PageHero
+        eyebrow="About BalanceCx"
+        title={
+          <>
+            Turning reactive maintenance into <span className="text-mint">proactive operations</span>
+          </>
+        }
+        lede="Built by EEI's building performance engineers, BalanceCx gives owners, engineers, and facility teams actionable intelligence across the entire lifecycle of a building."
+      />
 
-      <div className="py-16 px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold text-foreground mb-8">About BalanceCx</h1>
-          
-          <div className="prose prose-lg max-w-none">
-            <section className="mb-12">
-              <h2 className="text-2xl font-semibold text-foreground mb-4">Our Mission</h2>
-              <p className="text-muted-foreground mb-6">
-                BalanceCx is revolutionizing building performance optimization through cutting-edge analytics and fault detection diagnostics. 
-                We empower facility managers, engineers, and building owners with actionable intelligence to transform reactive maintenance 
-                into proactive operations.
+      <section className="px-6 py-11 lg:px-12 lg:py-[72px]">
+        <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-10 lg:grid-cols-[1fr_1fr] lg:gap-16">
+          <div>
+            <Eyebrow>Our Mission</Eyebrow>
+            <SectionTitle>Actionable intelligence for every building</SectionTitle>
+            <Prose>
+              <p className="m-0">
+                BalanceCx is revolutionizing building performance optimization through cutting-edge analytics and
+                fault detection diagnostics. We empower facility managers, engineers, and building owners with
+                actionable intelligence to transform reactive maintenance into proactive operations.
               </p>
-            </section>
-
-            <section className="mb-12">
-              <h2 className="text-2xl font-semibold text-foreground mb-4">What We Do</h2>
-              <p className="text-muted-foreground mb-6">
-                Our platform continuously monitors building systems, equipment, and IoT devices to identify optimization 
-                opportunities, predict failures, and ensure peak performance. From new construction commissioning to ongoing facility 
-                operations, BalanceCx provides the tools you need for:
-              </p>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-6">
-                <li>Real-time Fault Detection and Diagnostics (FDD)</li>
-                <li>Automated Building Commissioning (MBCx)</li>
-                <li>Predictive and Condition-Based Maintenance</li>
-                <li>Energy Optimization and Sustainability Reporting</li>
-                <li>Indoor Environmental Quality Management</li>
-                <li>Equipment Reliability Monitoring</li>
-              </ul>
-            </section>
-
-            <section className="mb-12">
-              <h2 className="text-2xl font-semibold text-foreground mb-4">Why Choose BalanceCx</h2>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <span className="text-primary mr-3 text-xl">✓</span>
-                  <div>
-                    <h3 className="font-semibold text-foreground">Proven Results</h3>
-                    <p className="text-muted-foreground">Average 30% reduction in energy costs and 40% decrease in equipment downtime</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <span className="text-primary mr-3 text-xl">✓</span>
-                  <div>
-                    <h3 className="font-semibold text-foreground">Easy Integration</h3>
-                    <p className="text-muted-foreground">Works with your existing BAS, IoT devices, and building systems</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <span className="text-primary mr-3 text-xl">✓</span>
-                  <div>
-                    <h3 className="font-semibold text-foreground">AI-Ready Platform</h3>
-                    <p className="text-muted-foreground">Structured data optimized for next-generation analytics and automation</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <span className="text-primary mr-3 text-xl">✓</span>
-                  <div>
-                    <h3 className="font-semibold text-foreground">Expert Support</h3>
-                    <p className="text-muted-foreground">Dedicated team of building performance engineers and data scientists</p>
-                  </div>
-                </div>
-              </div>
-            </section>
+            </Prose>
           </div>
-        </div>
-      </div>
-
-      {/* Footer */}
-      <footer className="bg-card border-t border-border py-12 px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="col-span-1 md:col-span-2">
-              <Image
-                src="/BalanceCx Logo - Black.png"
-                alt="BalanceCx Logo"
-                width={160}
-                height={50}
-                className="h-10 w-auto mb-4"
+          <div>
+            <Eyebrow>What We Do</Eyebrow>
+            <SectionTitle>One platform, the full service life</SectionTitle>
+            <Prose>
+              <p className="m-0">
+                Our platform continuously monitors building systems, equipment, and IoT devices to identify
+                optimization opportunities, predict failures, and ensure peak performance. From new construction
+                commissioning to ongoing facility operations, BalanceCx provides the tools you need for:
+              </p>
+            </Prose>
+            <div className="mt-5">
+              <BulletList
+                items={[
+                  "Real-time Fault Detection and Diagnostics (FDD)",
+                  "Automated Building Commissioning (MBCx)",
+                  "Predictive and Condition-Based Maintenance",
+                  "Energy Optimization and Sustainability Reporting",
+                  "Indoor Environmental Quality Management",
+                  "Equipment Reliability Monitoring",
+                ]}
               />
-              <p className="text-muted-foreground max-w-md">
-                Analytics platform for building performance optimization, commissioning, and facility operations.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-card-foreground mb-4">Product</h4>
-              <ul className="space-y-2 text-muted-foreground">
-                <li><Link href="/#highlighted-features" className="hover:text-card-foreground transition-colors">Features</Link></li>
-                <li><Link href="/#highlighted-features" className="hover:text-card-foreground transition-colors">Integrations</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-card-foreground mb-4">Company</h4>
-              <ul className="space-y-2 text-muted-foreground">
-                <li><Link href="/about" className="hover:text-card-foreground transition-colors">About</Link></li>
-                <li><Link href="/contact" className="hover:text-card-foreground transition-colors">Contact</Link></li>
-                <li><Link href="/support" className="hover:text-card-foreground transition-colors">Support</Link></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-border mt-8 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-muted-foreground mb-4 md:mb-0">&copy; 2024 BalanceCx. All rights reserved.</p>
-              <div className="flex space-x-6 text-muted-foreground">
-                <Link href="/privacy" className="hover:text-card-foreground transition-colors">Privacy Policy</Link>
-                <Link href="/cookies" className="hover:text-card-foreground transition-colors">Cookie Policy</Link>
-              </div>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </section>
+
+      <section className="border-y border-line bg-surface-2 px-6 py-11 lg:px-12 lg:py-[72px]">
+        <div className="mx-auto max-w-[1200px]">
+          <div className="mb-7 max-w-[640px] lg:mb-9">
+            <Eyebrow>Why BalanceCx</Eyebrow>
+            <SectionTitle>Why teams choose BalanceCx</SectionTitle>
+          </div>
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+            {WHY.map((w) => (
+              <div
+                key={w.title}
+                className="flex items-start gap-4 rounded-[14px] border border-line bg-white p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(20,24,28,0.10)] lg:p-6"
+              >
+                <div className="flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-[10px] bg-mint-100">
+                  <Check size={18} />
+                </div>
+                <div>
+                  <h3 className="m-0 mb-[6px] font-display text-[17px] font-bold leading-[1.25] text-ink">{w.title}</h3>
+                  <p className="m-0 text-[14.5px] leading-[1.6] text-body">{w.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-11 lg:px-12 lg:py-[72px]">
+        <div className="mx-auto max-w-[1200px]">
+          <CtaBand
+            title="See BalanceCx on your buildings"
+            body="Walk through the platform with an EEI engineer and see how it fits your projects, portfolio, or operations."
+            href={BOOKING_URL}
+            label="Schedule a Demo →"
+          />
+        </div>
+      </section>
+    </PageShell>
   );
 }

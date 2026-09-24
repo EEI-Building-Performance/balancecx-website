@@ -2,17 +2,16 @@
 
 import Image from "next/image";
 import { useState, type ReactNode } from 'react';
+import SiteNav from "@/components/SiteNav";
+import SiteFooter from "@/components/SiteFooter";
+import { BOOKING_URL, LOGIN_URL, WHITE_LOGO } from "@/lib/links";
 
 /* ---- Real destinations (preserved from the previous site) ---- */
-const BOOKING_URL =
-  "https://outlook.office365.com/book/BalanceCxIntroduction1@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true";
-const LOGIN_URL = "https://eei.balancecx.com/#/signIn";
 const CASE_PASCO =
   "https://eeibuildingperformance.com/case-study/campus-performance-improvements-at-pasco-school-district/";
 const CASE_OSU =
   "https://eeibuildingperformance.com/case-study/delivering-analytics-for-new-construction-at-the-ohio-stateuniversity-wexner-medical-center/";
 
-const WHITE_LOGO = "/balancecx-logo-white-trim.png";
 const AFT_IMG = "/BalanceCx AFT Image.png";
 const NETWORK_IMG = "/bacnet-network.png";
 const COPILOT_IMG = "/engineer-copilot.png";
@@ -298,100 +297,11 @@ const INDUSTRIES: { label: string; d: string }[] = [
 
 export default function Home() {
   const [lightbox, setLightbox] = useState<{ src: string; w: number; h: number; alt: string } | null>(null);
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const navLink = "text-white/70 transition-colors hover:text-white no-underline";
-  const navItems = [
-    { href: "#features", label: "Features" },
-    { href: "#integrations", label: "Integrations" },
-    { href: "#case-studies", label: "Case Studies" },
-  ];
 
   return (
     <div className="bg-white font-sans text-ink antialiased">
       {/* ===================== NAV ===================== */}
-      <nav className="sticky top-0 z-50 flex items-center justify-between border-b border-ink-border bg-ink/95 px-5 py-[14px] backdrop-blur-[8px] lg:px-12 lg:py-[18px]">
-        <div className="flex items-center gap-12">
-          <Image src={WHITE_LOGO} alt="BalanceCx" width={558} height={100} className="h-[24px] w-auto lg:h-[32px]" priority />
-          <div className="hidden items-center gap-[30px] text-[14px] font-medium lg:flex">
-            {navItems.map((it) => (
-              <a key={it.href} href={it.href} className={navLink}>{it.label}</a>
-            ))}
-          </div>
-        </div>
-        <div className="hidden items-center gap-5 lg:flex">
-          <a href={LOGIN_URL} target="_blank" rel="noopener noreferrer" className={`text-[14px] font-medium ${navLink}`}>Log In</a>
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg bg-mint px-5 py-[11px] text-[14px] font-semibold text-ink no-underline transition-colors hover:bg-mint-500"
-          >
-            Schedule Demo
-          </a>
-        </div>
-        <button
-          type="button"
-          onClick={() => setMenuOpen(true)}
-          aria-label="Open menu"
-          className="flex h-10 w-10 items-center justify-center transition-transform active:scale-95 lg:hidden"
-        >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth={2} strokeLinecap="round">
-            <path d="M3 6h18M3 12h18M3 18h18" />
-          </svg>
-        </button>
-      </nav>
-
-      {/* ===================== MOBILE MENU OVERLAY ===================== */}
-      {menuOpen && (
-        <div className="lightbox-fade fixed inset-0 z-[60] flex flex-col bg-ink px-6 py-[18px] lg:hidden">
-          <div className="mb-10 flex items-center justify-between">
-            <Image src={WHITE_LOGO} alt="BalanceCx" width={558} height={100} className="h-[24px] w-auto" />
-            <button
-              type="button"
-              onClick={() => setMenuOpen(false)}
-              aria-label="Close menu"
-              className="flex h-10 w-10 items-center justify-center transition-transform active:scale-95"
-            >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth={2} strokeLinecap="round">
-                <path d="M18 6 6 18M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div className="flex flex-col gap-[6px]">
-            {navItems.map((it) => (
-              <a
-                key={it.href}
-                href={it.href}
-                onClick={() => setMenuOpen(false)}
-                className="border-b border-ink-border py-3 font-display text-[28px] font-bold text-white no-underline"
-              >
-                {it.label}
-              </a>
-            ))}
-          </div>
-          <div className="mt-auto flex flex-col gap-3">
-            <a
-              href={LOGIN_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setMenuOpen(false)}
-              className="rounded-[10px] border border-white/20 py-[14px] text-center text-[15px] font-semibold text-white no-underline"
-            >
-              Log In
-            </a>
-            <a
-              href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setMenuOpen(false)}
-              className="rounded-[10px] bg-mint py-[14px] text-center text-[15px] font-semibold text-ink no-underline"
-            >
-              Schedule a Demo
-            </a>
-          </div>
-        </div>
-      )}
+      <SiteNav />
 
       {/* ===================== HERO ===================== */}
       <header className="relative overflow-hidden bg-ink px-6 pb-11 pt-10 lg:px-12 lg:pb-[34px] lg:pt-[30px]">
@@ -936,45 +846,7 @@ export default function Home() {
       </section>
 
       {/* ===================== FOOTER ===================== */}
-      <footer className="bg-ink-900 px-6 pb-8 pt-10 lg:px-12 lg:pt-14">
-        <div className="mx-auto max-w-[1200px]">
-          <div className="grid grid-cols-2 gap-x-6 gap-y-8 border-b border-ink-border pb-8 md:grid-cols-[1.6fr_1fr_1fr] md:gap-10 md:pb-10">
-            <div className="col-span-2 md:col-span-1">
-              <Image src={WHITE_LOGO} alt="BalanceCx" width={558} height={100} className="mb-[18px] h-[18px] w-auto" />
-              <p className="m-0 max-w-[340px] text-[14px] leading-[1.6] text-white/55">
-                Analytics platform for building performance optimization, commissioning, and facility operations.
-              </p>
-            </div>
-            <div>
-              <div className="mb-4 text-[12px] font-semibold uppercase tracking-[0.1em] text-white/40">Product</div>
-              <div className="flex flex-col gap-[11px] text-[14px]">
-                <a href="#features" className={navLink}>Features</a>
-                <a href="#integrations" className={navLink}>Integrations</a>
-                <a href="#case-studies" className={navLink}>Case Studies</a>
-              </div>
-            </div>
-            <div>
-              <div className="mb-4 text-[12px] font-semibold uppercase tracking-[0.1em] text-white/40">Company</div>
-              <div className="flex flex-col gap-[11px] text-[14px]">
-                <a href="/about" className={navLink}>About</a>
-                <a href="/contact" className={navLink}>Contact</a>
-                <a href="/support" className={navLink}>Support</a>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-wrap items-center justify-between gap-6 pt-6">
-            <div className="flex items-center gap-4">
-              <span className="text-[13px] text-white/40">© 2026 BalanceCx. All rights reserved.</span>
-              <a href="/privacy" className="text-[13px] text-white/55 no-underline transition-colors hover:text-white">Privacy Policy</a>
-              <a href="/cookies" className="text-[13px] text-white/55 no-underline transition-colors hover:text-white">Cookie Policy</a>
-            </div>
-            <div className="flex items-center gap-[10px]">
-              <span className="text-[12px] text-white/40">A product of</span>
-              <Image src="/eei-logo.png" alt="EEI" width={98} height={104} className="h-[22px] w-auto opacity-60 [filter:brightness(0)_invert(1)]" />
-            </div>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
 
       {/* ===================== LIGHTBOX ===================== */}
       {lightbox && (

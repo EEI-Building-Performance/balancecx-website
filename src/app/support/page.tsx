@@ -1,214 +1,172 @@
-'use client';
+import type { Metadata } from "next";
+import PageShell, { Eyebrow, PageHero, SectionTitle } from "@/components/PageShell";
+import { BOOKING_URL, LOGIN_URL } from "@/lib/links";
 
-import Image from "next/image";
-import Link from "next/link";
+export const metadata: Metadata = {
+  title: "Support — BalanceCx",
+  description: "Resources, documentation, training, and answers to common questions about the BalanceCx platform.",
+};
+
+const FAQ: { q: string; a: string }[] = [
+  {
+    q: "How do I connect my BAS to BalanceCx?",
+    a: "BalanceCx supports multiple connectivity options including EEI Data Gateway, Novant, and direct BAS exports. Contact support for setup assistance.",
+  },
+  {
+    q: "What building systems can BalanceCx monitor?",
+    a: "We monitor HVAC, lighting, electrical, plumbing, fire/life safety, access control, and IoT devices across all major BAS platforms.",
+  },
+  {
+    q: "How quickly can I see results?",
+    a: "Most clients see actionable insights within 24 hours of data connection. Energy savings and performance improvements typically begin within 30 days.",
+  },
+  {
+    q: "Is BalanceCx suitable for my building size?",
+    a: "BalanceCx scales from single buildings to entire portfolios. We serve facilities from 50,000 to millions of square feet.",
+  },
+  {
+    q: "Can BalanceCx work offline?",
+    a: "Yes, BalanceCx has a fully functional offline version that can operate independently without internet connectivity, ensuring continuous monitoring and analytics.",
+  },
+  {
+    q: "What types of reports can I generate?",
+    a: "Generate energy consumption reports, FDD summaries, equipment performance analytics, comfort analysis, maintenance logs, and custom reports tailored to your needs.",
+  },
+  {
+    q: "How does BalanceCx help with energy savings?",
+    a: "Our platform identifies inefficiencies, recommends optimization strategies, and tracks improvements. Most clients achieve 15-30% energy cost reduction within the first year.",
+  },
+  {
+    q: "What support is available during implementation?",
+    a: "We provide dedicated implementation support including system configuration, data mapping, training sessions, and ongoing technical assistance from our engineering team.",
+  },
+  {
+    q: "Can I integrate BalanceCx with my existing work order system?",
+    a: "Yes, BalanceCx offers API integrations with popular CMMS and work order systems, enabling automated ticket creation and bidirectional data synchronization.",
+  },
+];
+
+function QuickAction({
+  href,
+  icon,
+  title,
+  body,
+  cta,
+}: {
+  href: string;
+  icon: string;
+  title: string;
+  body: string;
+  cta: string;
+}) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group flex items-start gap-4 rounded-[14px] border border-line bg-white p-5 no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(20,24,28,0.10)] lg:p-6"
+    >
+      <div className="flex h-[42px] w-[42px] shrink-0 items-center justify-center rounded-[10px] bg-ink">
+        <svg
+          width={22}
+          height={22}
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#5CE8C8"
+          strokeWidth={1.75}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          dangerouslySetInnerHTML={{ __html: icon }}
+        />
+      </div>
+      <div className="min-w-0">
+        <h3 className="m-0 mb-1 font-display text-[18px] font-bold leading-[1.25] text-ink">{title}</h3>
+        <p className="m-0 mb-3 text-[14.5px] leading-[1.6] text-body">{body}</p>
+        <span className="inline-flex items-center gap-[6px] text-[14px] font-semibold text-mint-600">
+          {cta}
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-0.5">
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </span>
+      </div>
+    </a>
+  );
+}
 
 export default function Support() {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header/Navigation */}
-      <header className="py-6 px-6 lg:px-8 border-b border-border">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <Link href="/">
-            <Image
-              src="/BalanceCx Logo - Black.png"
-              alt="BalanceCx Logo"
-              width={180}
-              height={60}
-              className="h-12 w-auto"
+    <PageShell>
+      <PageHero
+        eyebrow="Support Center"
+        title={
+          <>
+            Get the most from <span className="text-mint">BalanceCx</span>
+          </>
+        }
+        lede="Documentation, training, and answers to the questions we hear most from owners, engineers, and facility teams."
+      />
+
+      <section className="px-6 py-11 lg:px-12 lg:py-[72px]">
+        <div className="mx-auto max-w-[1200px]">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+            <QuickAction
+              href={LOGIN_URL}
+              icon='<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/>'
+              title="Documentation"
+              body="Log in to the platform and open the Documentation link from the main menu."
+              cta="Log In"
             />
-          </Link>
-          <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/#highlighted-features" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Features</Link>
-            <Link href="/#industries" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Industries</Link>
-            <Link href="/#testimonials" className="text-foreground hover:text-primary transition-colors text-base font-medium py-2 px-3">Case Studies</Link>
-            <a 
-              href="https://outlook.office365.com/book/BalanceCxIntroduction1@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity text-base"
-            >
-              Schedule Demo
-            </a>
-            <a 
-              href="https://eei.balancecx.com/#/signIn" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-border text-foreground px-6 py-2.5 rounded-lg font-semibold hover:bg-muted transition-colors text-base"
-            >
-              Log In
-            </a>
-          </nav>
+            <QuickAction
+              href={BOOKING_URL}
+              icon='<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>'
+              title="Schedule Training"
+              body="Book a personalized training session with an EEI building performance engineer."
+              cta="Book Session"
+            />
+          </div>
         </div>
-      </header>
+      </section>
 
-      <div className="py-16 px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-foreground mb-4">Support Center</h1>
-            <p className="text-xl text-muted-foreground">
-              Resources and assistance to help you get the most from BalanceCx
-            </p>
-          </div>
-
-          {/* Quick Actions */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            <a 
-              href="https://eei.balancecx.com/#/signIn"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-card p-6 rounded-xl shadow-sm border border-border hover:border-primary transition-colors"
-            >
-              <div className="text-primary text-3xl mb-4">📄</div>
-              <h3 className="text-lg font-semibold text-card-foreground mb-2">Documentation</h3>
-              <p className="text-muted-foreground mb-4">
-                Login and click on the Documentation link
-              </p>
-              <span className="text-primary font-medium">Log In →</span>
-            </a>
-
-            <a 
-              href="https://outlook.office365.com/book/BalanceCxIntroduction1@EEIengineers.onmicrosoft.com/?ismsaljsauthenabled=true"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-card p-6 rounded-xl shadow-sm border border-border hover:border-primary transition-colors"
-            >
-              <div className="text-primary text-3xl mb-4">📅</div>
-              <h3 className="text-lg font-semibold text-card-foreground mb-2">Schedule Training</h3>
-              <p className="text-muted-foreground mb-4">
-                Book a personalized training session
-              </p>
-              <span className="text-primary font-medium">Book Session →</span>
-            </a>
-          </div>
-
-          {/* Support Resources */}
-          <div className="mb-12">
-            <div className="bg-card p-8 rounded-xl shadow-sm border border-border">
-              <h2 className="text-2xl font-semibold text-card-foreground mb-6">Frequently Asked Questions</h2>
-              <div className="space-y-4">
-                <details className="group">
-                  <summary className="font-semibold text-card-foreground cursor-pointer hover:text-primary">
-                    How do I connect my BAS to BalanceCx?
-                  </summary>
-                  <p className="text-muted-foreground mt-2 pl-4">
-                    BalanceCx supports multiple connectivity options including EEI Data Gateway, Novant, and direct BAS exports. Contact support for setup assistance.
-                  </p>
-                </details>
-                <details className="group">
-                  <summary className="font-semibold text-card-foreground cursor-pointer hover:text-primary">
-                    What building systems can BalanceCx monitor?
-                  </summary>
-                  <p className="text-muted-foreground mt-2 pl-4">
-                    We monitor HVAC, lighting, electrical, plumbing, fire/life safety, access control, and IoT devices across all major BAS platforms.
-                  </p>
-                </details>
-                <details className="group">
-                  <summary className="font-semibold text-card-foreground cursor-pointer hover:text-primary">
-                    How quickly can I see results?
-                  </summary>
-                  <p className="text-muted-foreground mt-2 pl-4">
-                    Most clients see actionable insights within 24 hours of data connection. Energy savings and performance improvements typically begin within 30 days.
-                  </p>
-                </details>
-                <details className="group">
-                  <summary className="font-semibold text-card-foreground cursor-pointer hover:text-primary">
-                    Is BalanceCx suitable for my building size?
-                  </summary>
-                  <p className="text-muted-foreground mt-2 pl-4">
-                    BalanceCx scales from single buildings to entire portfolios. We serve facilities from 50,000 to millions of square feet.
-                  </p>
-                </details>
-                <details className="group">
-                  <summary className="font-semibold text-card-foreground cursor-pointer hover:text-primary">
-                    Can BalanceCx work offline?
-                  </summary>
-                  <p className="text-muted-foreground mt-2 pl-4">
-                    Yes, BalanceCx has a fully functional offline version that can operate independently without internet connectivity, ensuring continuous monitoring and analytics.
-                  </p>
-                </details>
-                <details className="group">
-                  <summary className="font-semibold text-card-foreground cursor-pointer hover:text-primary">
-                    What types of reports can I generate?
-                  </summary>
-                  <p className="text-muted-foreground mt-2 pl-4">
-                    Generate energy consumption reports, FDD summaries, equipment performance analytics, comfort analysis, maintenance logs, and custom reports tailored to your needs.
-                  </p>
-                </details>
-                <details className="group">
-                  <summary className="font-semibold text-card-foreground cursor-pointer hover:text-primary">
-                    How does BalanceCx help with energy savings?
-                  </summary>
-                  <p className="text-muted-foreground mt-2 pl-4">
-                    Our platform identifies inefficiencies, recommends optimization strategies, and tracks improvements. Most clients achieve 15-30% energy cost reduction within the first year.
-                  </p>
-                </details>
-                <details className="group">
-                  <summary className="font-semibold text-card-foreground cursor-pointer hover:text-primary">
-                    What support is available during implementation?
-                  </summary>
-                  <p className="text-muted-foreground mt-2 pl-4">
-                    We provide dedicated implementation support including system configuration, data mapping, training sessions, and ongoing technical assistance from our engineering team.
-                  </p>
-                </details>
-                <details className="group">
-                  <summary className="font-semibold text-card-foreground cursor-pointer hover:text-primary">
-                    Can I integrate BalanceCx with my existing work order system?
-                  </summary>
-                  <p className="text-muted-foreground mt-2 pl-4">
-                    Yes, BalanceCx offers API integrations with popular CMMS and work order systems, enabling automated ticket creation and bidirectional data synchronization.
-                  </p>
-                </details>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      {/* Footer */}
-      <footer className="bg-card border-t border-border py-12 px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="col-span-1 md:col-span-2">
-              <Image
-                src="/BalanceCx Logo - Black.png"
-                alt="BalanceCx Logo"
-                width={160}
-                height={50}
-                className="h-10 w-auto mb-4"
-              />
-              <p className="text-muted-foreground max-w-md">
-                Analytics platform for building performance optimization, commissioning, and facility operations.
-              </p>
-            </div>
+      <section className="border-t border-line bg-surface-2 px-6 py-11 lg:px-12 lg:py-[72px]">
+        <div className="mx-auto max-w-[1200px]">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_2fr] lg:gap-16">
             <div>
-              <h4 className="font-semibold text-card-foreground mb-4">Product</h4>
-              <ul className="space-y-2 text-muted-foreground">
-                <li><Link href="/#highlighted-features" className="hover:text-card-foreground transition-colors">Features</Link></li>
-                <li><Link href="/#highlighted-features" className="hover:text-card-foreground transition-colors">Integrations</Link></li>
-              </ul>
+              <Eyebrow>FAQ</Eyebrow>
+              <SectionTitle>Frequently asked questions</SectionTitle>
+              <p className="m-0 text-[14.5px] leading-[1.6] text-body">
+                Can&apos;t find what you need? Reach out through the{" "}
+                <a href="/contact" className="font-semibold text-mint-600 no-underline hover:text-accent">
+                  contact page
+                </a>
+                .
+              </p>
             </div>
-            <div>
-              <h4 className="font-semibold text-card-foreground mb-4">Company</h4>
-              <ul className="space-y-2 text-muted-foreground">
-                <li><Link href="/about" className="hover:text-card-foreground transition-colors">About</Link></li>
-                <li><Link href="/contact" className="hover:text-card-foreground transition-colors">Contact</Link></li>
-                <li><Link href="/support" className="hover:text-card-foreground transition-colors">Support</Link></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-border mt-8 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-muted-foreground mb-4 md:mb-0">&copy; 2024 BalanceCx. All rights reserved.</p>
-              <div className="flex space-x-6 text-muted-foreground">
-                <Link href="/privacy" className="hover:text-card-foreground transition-colors">Privacy Policy</Link>
-                <Link href="/cookies" className="hover:text-card-foreground transition-colors">Cookie Policy</Link>
-              </div>
+            <div className="overflow-hidden rounded-[14px] border border-line bg-white">
+              {FAQ.map((f) => (
+                <details key={f.q} className="group border-b border-line-soft last:border-b-0">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-[18px] text-[15px] font-semibold leading-[1.4] text-ink transition-colors hover:bg-surface-2 [&::-webkit-details-marker]:hidden lg:px-6">
+                    {f.q}
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#16A88A"
+                      strokeWidth={2}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="shrink-0 transition-transform duration-200 group-open:rotate-180"
+                    >
+                      <path d="m6 9 6 6 6-6" />
+                    </svg>
+                  </summary>
+                  <p className="m-0 px-5 pb-5 text-[14.5px] leading-[1.65] text-body lg:px-6">{f.a}</p>
+                </details>
+              ))}
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </section>
+    </PageShell>
   );
 }
